@@ -22,7 +22,6 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Dominik Pichler</a>
-        <?php echo file_get_contents("../assets/svg/coding.svg"); ?>
 
 
     </div>
@@ -35,9 +34,6 @@
 
             <h2 class="text-white-100 mx-auto mt-2 mb-5 ml4 ">My name is Dominik and I'm a passionated Webdeveloper, Student and Outdoor-Enthusiast.</h2>
             <a class="btn btn-primary js-scroll-trigger" href="#contact">Let's talk</a>
-            <!-- Anime.js-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
         </div>
     </div>
 </header>
