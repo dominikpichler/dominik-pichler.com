@@ -156,7 +156,8 @@ sup {
 }
 
 a {
-  color: #2595FF;
+  color: #008000
+;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2487,8 +2488,10 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #2595FF;
-  border-color: #2595FF;
+  background-color: #008000
+;
+  border-color: #008000
+;
 }
 .btn-primary:hover {
   color: #fff;
@@ -2501,19 +2504,25 @@ fieldset:disabled a.btn {
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #2595FF;
-  border-color: #2595FF;
+  background-color: #008000
+;
+  border-color: #008000
+;
   box-shadow: 0 0 0 0.2rem rgba(123, 175, 172, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #2595FF;
-  border-color: #2595FF;
+  background-color: #008000
+;
+  border-color: #008000
+;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #2595FF;
-  border-color: #2595FF;
+  background-color: #008000
+;
+  border-color: #008000
+;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(123, 175, 172, 0.5);
@@ -2551,8 +2560,10 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #2595FF;
-  border-color: #2595FF;
+  background-color: #008000
+;
+  border-color: #008000
+;
 }
 .btn-success:hover {
   color: #fff;
@@ -9924,15 +9935,18 @@ button.bg-black:focus {
 }
 
 .text-primary {
-  color: #2595FF !important;
+  color: #008000
+ !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #2595FF !important;
+  color: #008000
+ !important;
 }
 
 .text-secondary {
-  color: #2595FF !important;
+  color: #008000
+ !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -10143,7 +10157,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #87CEFA;
+  background-color: #006400;
   color: white;
 }
 #mainNav .navbar-toggler {
@@ -10256,7 +10270,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  background-color: #87CEFA;
+  background-color: #006400;
 }
 .masthead h1 {
   font-size: 2rem;
@@ -10322,7 +10336,8 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #2595FF;
+    border-color: #008000
+;
     border-width: 0.25rem;
     width: 30%;
   }
@@ -10351,7 +10366,8 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #2595FF;
+  border-bottom: 0.25rem solid #008000
+;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
@@ -10359,7 +10375,8 @@ body {
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #2595FF;
+  border-color: #008000
+;
   border-width: 0.25rem;
   width: 3rem;
 }
