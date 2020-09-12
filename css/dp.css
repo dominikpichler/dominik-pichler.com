@@ -8,6 +8,18 @@ html, body {
     -webkit-text-size-adjust: 100%;
 }
 
-svg {
-   fill:red;
+
+
+
+.freelancer_svg {
+    position: absolute;
+    bottom: -160px;
+    justify-content: center;
+    width: 30%;
+    /* align-content: center; */
+    /* margin-left: auto; */
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
