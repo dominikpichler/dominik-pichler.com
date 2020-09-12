@@ -1,0 +1,13 @@
+@font-face {
+    font-family: poppins_regular;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+html, body {
+    font-family: poppins_regular, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+svg {
+   fill:red;
+}
