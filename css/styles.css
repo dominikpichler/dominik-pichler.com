@@ -10143,7 +10143,8 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: #87CEFA;
+  color: white;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10155,7 +10156,7 @@ body {
   outline: none;
 }
 #mainNav .navbar-brand {
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
   padding: 0.9rem 0;
   font-weight: 300;
@@ -10250,11 +10251,12 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/Background1.jpg");
+  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/Background1.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  background-color: #87CEFA;
 }
 .masthead h1 {
   font-size: 2rem;
