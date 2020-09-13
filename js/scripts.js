@@ -60,44 +60,17 @@
 // ========= CUSTOM ADD'S =========
 
 
-// Font-Apperance Header
 
+/* ======== LOGO Animation Text ======== */
 
+const logo = document.querySelectorAll("#logo path");
 
-
-var headerWrapper = document.querySelector('.ml3');
-headerWrapper.innerHTML = headerWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: false})
-    .add({
-        targets: '.ml3 .letter',
-        opacity: [0,1],
-        easing: "easeInOutQuad",
-        duration: 2250,
-        delay: (el, i) => 150 * (i+1)
-    });
-
-
-var textWrapper = document.querySelector('.ml4');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-var text_delay = 0;
-
-setTimeout(function() {
-
-    anime.timeline({loop: false})
-        .add({
-            targets: '.ml4 .letter',
-            opacity: [0,1],
-            easing: "easeInOutQuad",
-            duration: 2250,
-            //delay: (el, i) => 15 * (i+1)
-            delay:1200
-        });
-
-
-
-}, text_delay);
+console.log("test")
+console.log(logo)
+for (let i = 0; i < logo.length; i++){
+    console.log("1")
+    console.log('Letter ' + i +  ' is ' +  logo[i].getTotalLength());
+}
 
 
 

@@ -156,7 +156,9 @@ sup {
 }
 
 a {
-  color: #008000
+  color: #191970
+
+
 ;
   text-decoration: none;
   background-color: transparent;
@@ -2488,15 +2490,21 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #008000
+  background-color: #4169E1
+
+
+
 ;
-  border-color: #008000
+  border-color: #4169E1
+
+
+
 ;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #228B22;
-  border-color: #228B22;
+  background-color: #6495ED;
+  border-color: #6495EDgit;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 
@@ -2504,24 +2512,37 @@ fieldset:disabled a.btn {
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #008000
+  background-color: #4169E1
+
+
+
 ;
-  border-color: #008000
+  border-color: #191970
+
+
 ;
   box-shadow: 0 0 0 0.2rem rgba(123, 175, 172, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #008000
+  background-color: #191970
+
+
 ;
-  border-color: #008000
+  border-color: #191970
+
+
 ;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #008000
+  background-color: #191970
+
+
 ;
-  border-color: #008000
+  border-color: #191970
+
+
 ;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
@@ -2560,9 +2581,13 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #008000
+  background-color: #191970
+
+
 ;
-  border-color: #008000
+  border-color: #191970
+
+
 ;
 }
 .btn-success:hover {
@@ -9935,17 +9960,23 @@ button.bg-black:focus {
 }
 
 .text-primary {
-  color: #008000
+  color: #191970
+
+
  !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #008000
+  color: #191970
+
+
  !important;
 }
 
 .text-secondary {
-  color: #008000
+  color: #191970
+
+
  !important;
 }
 
@@ -10157,7 +10188,9 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #006400;
+  background-color: #191970
+
+;
   color: white;
 }
 #mainNav .navbar-toggler {
@@ -10270,7 +10303,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  background-color: #006400;
+  background-color: #191970
+
+;
 }
 .masthead h1 {
   font-size: 2rem;
@@ -10281,6 +10316,7 @@ body {
 
 }
 .masthead h2 {
+  padding-top: 10px;
   max-width: 20rem;
   font-size: 1rem;
   font-weight: 200;
@@ -10336,7 +10372,9 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #008000
+    border-color: #191970
+
+
 ;
     border-width: 0.25rem;
     width: 30%;
@@ -10366,7 +10404,9 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #008000
+  border-bottom: 0.25rem solid #191970
+
+
 ;
 }
 .contact-section .card h4 {
@@ -10375,7 +10415,9 @@ body {
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #008000
+  border-color: #191970
+
+
 ;
   border-width: 0.25rem;
   width: 3rem;
