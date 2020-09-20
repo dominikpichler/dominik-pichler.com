@@ -172,3 +172,56 @@ html, body {
 .masthead_content {
     padding-top: 200px;
 }
+
+.flexbox-contact {
+    display: flex;
+    background-color: #0D122E;
+}
+section {
+    background-color:#0D122E ;
+}
+
+.contact-form{
+    border-radius: 10px;
+    margin-top: 20%;
+    margin-right: 0;
+    background-color: white;
+    height: 90%;
+    width:100%;
+}
+
+.contact-text {
+    margin-top: 15%;
+}
+
+.contact-text > h2 {
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+   #logo {
+       width: 80%;
+   }
+
+    .masthead_content {
+        padding-top: 0px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .text-home {
+        display: block;
+    }
+
+    .textbox-home:nth-child(2){
+        padding-left: 0;
+    }
+
+    .textbox-home {
+        width: 100%;
+    }
+}
+
+
