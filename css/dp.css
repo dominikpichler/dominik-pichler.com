@@ -17,14 +17,14 @@ html, body {
 }
 
 #logo path:nth-child(1){
-    stroke-dasharray: 267.2640075683594;
-    stroke-dashoffset: 267.2640075683594;
+    stroke-dasharray: 345.6607666015625;
+    stroke-dashoffset: 345.6607666015625;
     animation: line-anim 2s ease forwards;
 }
 
 #logo path:nth-child(2){
-    stroke-dasharray: 231.9840087890625;
-    stroke-dashoffset: 231.9840087890625;
+    stroke-dasharray: 300.9988098144531;
+    stroke-dashoffset: 300.9988098144531;
     animation: line-anim 2s ease forwards 0.3s;
 
 
@@ -32,29 +32,53 @@ html, body {
 }
 
 #logo path:nth-child(3){
-    stroke-dasharray: 148.60882568359375;
-    stroke-dashoffset: 148.60882568359375;
+    stroke-dasharray: 248.84634399414062;
+    stroke-dashoffset: 248.84634399414062;
     animation: line-anim 2s ease forwards 0.6s;
 
 
 }
 #logo path:nth-child(4){
-    stroke-dasharray: 148.60800170898438;
-    stroke-dashoffset: 148.60800170898438;
+    stroke-dasharray: 300.99896240234375;
+    stroke-dashoffset: 300.99896240234375;
     animation: line-anim 2s ease forwards 0.9s;
 
 
 }
 #logo path:nth-child(5){
-    stroke-dasharray: 282.9753112792969;
-    stroke-dashoffset: 282.9753112792969;
+    stroke-dasharray: 174.9119873046875;
+    stroke-dashoffset: 174.9119873046875;
     animation: line-anim 2s ease forwards 1.2s;
 
 
 }
 #logo path:nth-child(6){
-    stroke-dasharray: 112.43405151367188;
-    stroke-dashoffset: 112.43405151367188;
+    stroke-dasharray: 254.22616577148438;
+    stroke-dashoffset: 254.22616577148438;
+    animation: line-anim 2s ease forwards 1.5s;
+
+
+}
+
+#logo path:nth-child(7){
+    stroke-dasharray: 351.95111083984375;
+    stroke-dashoffset: 351.95111083984375;
+    animation: line-anim 2s ease forwards 1.5s;
+
+
+}
+
+#logo path:nth-child(8){
+    stroke-dasharray: 300.99945068359375;
+    stroke-dashoffset: 300.99945068359375;
+    animation: line-anim 2s ease forwards 1.5s;
+
+
+}
+
+#logo path:nth-child(9){
+    stroke-dasharray: 182.05319213867188;
+    stroke-dashoffset: 182.05319213867188;
     animation: line-anim 2s ease forwards 1.5s;
 
 
@@ -73,7 +97,7 @@ html, body {
    }
 
     to {
-        fill: white
+        fill: #85FF9F
     ;
     }
 }
@@ -93,4 +117,58 @@ html, body {
         transform: rotateZ(360deg);
     }
 
+}
+
+.text-home{
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.heading_home {
+    font-family: poppins_regular;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: 0 !important;
+    text-align: left;
+    float: left;
+    width: 100%;
+
+
+}
+
+.heading-section {
+
+    display: block;
+}
+
+.textbox-home {
+    width: 50%;
+}
+
+.textbox-home:nth-child(1){
+    padding-right: 5%;
+}
+
+.textbox-home:nth-child(2){
+    padding-left: 5%;
+}
+
+
+
+.basic-text {
+    font-family: poppins_regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.masthead_content {
+    padding-top: 200px;
 }
