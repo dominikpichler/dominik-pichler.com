@@ -79,10 +79,154 @@ html, body {
 #logo path:nth-child(9){
     stroke-dasharray: 182.05319213867188;
     stroke-dashoffset: 182.05319213867188;
-    animation: line-anim 2s ease forwards 1.5s;
+    animation: line-anim 2s  forwards 1.5s;
+
 
 
 }
+
+
+
+
+#whatsup path:nth-child(1){
+    animation: moveIt_1  1s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
+    animation-delay: 1s;
+}
+
+#whatsup path:nth-child(2){
+    animation: moveIt_2  1s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
+    animation-delay: 1s;
+}
+
+#whatsup path:nth-child(3){
+    animation: moveIt_3 1s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
+    animation-delay: 1s;
+}
+
+#whatsup path:nth-child(4){
+    animation: moveIt_4 1s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
+    animation-delay: 1s;
+}
+
+#whatsup path:nth-child(5){
+    animation: moveIt_6  1s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
+    animation-delay: 1s;
+}
+
+#whatsup path:nth-child(6){
+    animation: moveIt_5  1s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
+    animation-delay: 1s;
+}
+
+#whatsup path:nth-child(7){
+    animation: moveIt_7 1s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
+    animation-delay: 1s;
+}
+
+#whatsup path:nth-child(8){
+
+
+/*
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc((--scroll) * -1s);
+
+
+ */
+
+     animation: moveIt_8 1s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+    animation-delay: 1s;
+
+
+}
+
+
+.svg_container::after {
+    content: url('/assets/img/dominik-pichler.jpg');
+    background-color: red;
+
+
+}
+
+
+
+@keyframes moveIt_1 {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translate(-30%,-20%);
+          }
+}
+
+@keyframes moveIt_2 {
+    from {
+        transform: translate(0,0);
+    } to {
+          transform: translate(-28%,-5%);
+      }
+}
+
+
+@keyframes moveIt_3 {
+    from {
+        transform: translate(0,0);
+    } to {
+          transform: translate(-26%,-15%);
+      }
+}
+
+@keyframes moveIt_4 {
+    from {
+        transform: translate(0,0);
+    } to {
+          transform: translate(-24%,0%);
+      }
+}
+
+@keyframes moveIt_8 {
+    from {
+        transform: translateY(0);
+    } to {
+          transform: translate(30%,-20%);
+      }
+}
+
+@keyframes moveIt_7 {
+    from {
+        transform: translate(0,0);
+    } to {
+          transform: translate(28%,-5%);
+      }
+}
+
+
+@keyframes moveIt_6 {
+    from {
+        transform: translate(0,0);
+    } to {
+          transform: translate(26%,-15%);
+      }
+}
+
+@keyframes moveIt_5 {
+    from {
+        transform: translate(0,0);
+    } to {
+          transform: translate(24%,0%);
+      }
+}
+
+
+
+
 
 @keyframes line-anim {
     to {
@@ -225,3 +369,70 @@ section {
 }
 
 
+.heading_work{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0;
+    color: #ffffff;
+
+}
+
+
+.box_underline:after{
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 20px;
+    border-bottom: 2px solid white;
+}
+
+.work-box {
+    margin-bottom: 0 !important;
+}
+
+.image_full-width {
+    width: 100%;
+}
+
+.work_text-box {
+    color: white;
+}
+
+.work_text-box:nth-child(2n-1) {
+
+    margin: 0 auto;
+    max-width: 480px;
+    padding-left: 0.75rem;
+}
+.work_text-box:nth-child(2n){
+    margin: 0 auto;
+    max-width: 480px;
+    padding-right: 0.75rem;
+}
+
+.work-box h3{
+    line-height: 2;
+    font-weight: bold;
+}
+
+
+.work_heading_padding {
+    margin-bottom: 28px;
+    padding-top: 10rem;
+    padding-bottom: 0;
+}
+
+.work_section_padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.project-heading {
+    padding-bottom: 0;
+}
+
+.bg-main {
+    background-color: rgba(13,18,46,1);
+}

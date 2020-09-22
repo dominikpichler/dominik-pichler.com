@@ -65,12 +65,27 @@
 
 const logo = document.querySelectorAll("#logo path");
 
-console.log("test")
 console.log(logo)
 for (let i = 0; i < logo.length; i++){
     console.log("1")
     console.log('Letter ' + i +  ' is ' +  logo[i].getTotalLength());
 }
+
+/* ======== Sroll Animation About-Section ======== */
+
+window.addEventListener(
+    "scroll",
+    () => {
+        document.body.style.setProperty(
+            "--scroll",
+            window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+
+        );
+    },
+    false
+);
+
+
 
 
 

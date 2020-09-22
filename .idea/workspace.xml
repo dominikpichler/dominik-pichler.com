@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ef8a1f8b-020a-4a6c-939f-5d95abecd040" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/dominik-pichler copy.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/dp.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work.html" beforeDir="false" afterPath="$PROJECT_DIR$/work.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +104,7 @@
       <updated>1599822974428</updated>
       <workItem from="1599822977648" duration="12168000" />
       <workItem from="1599843396173" duration="24188000" />
-      <workItem from="1600597695894" duration="9720000" />
+      <workItem from="1600597695894" duration="20251000" />
     </task>
     <servers />
   </component>
@@ -108,14 +112,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="880" y="148" key="#Deployment" timestamp="1599924745378">
+    <state x="428" y="198" key="#CLI_Interpreters" timestamp="1600681443214">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="880" y="148" key="#Deployment/0.23.1680.1027@0.23.1680.1027" timestamp="1599924745378" />
+    <state x="428" y="198" key="#CLI_Interpreters/0.23.1680.1027@0.23.1680.1027" timestamp="1600681443214" />
+    <state x="880" y="148" key="#Deployment" timestamp="1600620752592">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="880" y="148" key="#Deployment/0.23.1680.1027@0.23.1680.1027" timestamp="1600620752592" />
     <state x="307" y="202" key="#Options" timestamp="1599826856792">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="307" y="202" key="#Options/0.23.1680.1027@0.23.1680.1027" timestamp="1599826856792" />
+    <state x="515" y="121" key="#PHP" timestamp="1600684668433">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="515" y="121" key="#PHP/0.23.1680.1027@0.23.1680.1027" timestamp="1600684668433" />
     <state x="581" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600611269314">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

@@ -10258,7 +10258,7 @@ body {
     color: #85FF9F;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #85FF9F;
     outline: none;
     border-bottom: 0.25rem solid #85FF9F;
   }
@@ -10365,7 +10365,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid rgb(133, 255, 159);
   }
 }
 .projects-section .project-text {
