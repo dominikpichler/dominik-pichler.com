@@ -17,6 +17,8 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/dp.css" rel="stylesheet" />
 
+    <script src="https://kit.fontawesome.com/d1c871875b.js" crossorigin="anonymous"></script>
+
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -54,20 +56,7 @@
 
 
 
-<section class="about-section text-center" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-                <p class="text-white-100">
-                    Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                    <a href="https://startbootstrap.com/template-overviews/grayscale/" style="color: rgb(133, 255, 159)">the preview page</a>
-                    . The theme is open source, and you can use it for any purpose, personal or commercial.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 
 
@@ -75,14 +64,72 @@
 <!-- Projects-->
 <section>
     <div class="flexbox-contact container">
-        <div class="col-md-6 mb-3 mb-md-0" style=" height:50vh;padding: 0;display: block; margin: 0">
+        <div class="col-md-6 mb-3 mb-md-0 contact-container" >
             <div class="contact-text">
                 <h2> Get in touch</h2>
+                <p>
+                    Feel free to drop a message whenever you want.
+                     I love to meet new people
+                </p>
             </div>
+            <div class="contact-details">
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone favicon_contact"></i>+123 456 789</li>
+                </ul>
+
+                <ul class="contact-list">
+                    <li><i class="fas fa-envelope favicon_contact"></i>info[at]dominik-pichler[dot]com </li>
+                </ul>
+
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt favicon_contact"></i>80337 Munich - Germany</li>
+                </ul>
+            </div>
+
+
+            <div class="contact-icon-container">
+
+                <i class="fab fa-github contact-icon"></i>
+                <i class="fab fa-instagram contact-icon"></i>
+                <i class="fab fa-linkedin contact-icon"></i>
+
+
+            </div>
+
+
         </div>
 
         <div class="col-md-6 mb-3 mb-md-0" style=" height:50vh;display: block;">
             <div class="contact-form">
+                    <form action="/action_page.php">
+                        <div class="contact-form-personal">
+                            <input class="input-name" type="text" id="name" name="name" autocomplete="off" required><br>
+                            <label class="label_name" for="name">
+                                <span class="content-name">Your Name</span>
+                            </label>
+                        </div>
+
+                        <div class="contact-form-personal">
+                            <input class="input-name" type="email" id="email" name="email" autocomplete="off" required><br>
+                            <label class="label_name" for="email">
+                                <span class="content-name">Your E-Mail</span>
+                            </label>
+                        </div>
+
+                        <div class="contact-form-personal">
+                            <textarea class="input-name" id="message" name="message" cols="40" rows="5" autocomplete="off" required></textarea>
+
+                            <!-- <input class="input-name" type="text" id="message" name="message" autocomplete="off" required><br> -->
+                            <label class="label_name" for="message">
+                                <span class="content-name">Your Message</span>
+                            </label>
+                        </div>
+                        <div class="btn-container">
+
+                             <input class="btn btn-contact" type="submit" value="Send Message">
+                        </div>
+
+                    </form>
 
             </div>
 
@@ -94,47 +141,7 @@
 
 
 <!-- Contact--->
-<section class="contact-section " id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Address</h4>
-                        <hr class="my-4" />
-                        <div class="small text-black-50">80337 Munich, Germany</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-envelope text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Email</h4>
-                        <hr class="my-4" />
-                        <div class="small text-black-50"><a href="#!">info[at]dominik-pichler[dot]com</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Phone</h4>
-                        <hr class="my-4" />
-                        <div class="small text-black-50">By Request</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="social d-flex justify-content-center">
-            <a class="mx-2" href="https://www.instagram.com/dominikpichler/"><i class="fab fa-instagram"></i></a>
-            <a class="mx-2" href="https://www.linkedin.com/in/dominik-pichler-811827135/"><i class="fab fa-linkedin  "></i></a>
-            <a class="mx-2" href="https://github.com/dominikpichler"><i class="fab fa-github "></i></a>
-        </div>
-    </div>
-</section>
+
 
 
 <!-- Footer-->
