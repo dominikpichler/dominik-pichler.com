@@ -318,10 +318,16 @@ html, body {
 }
 
 .flexbox-contact {
-    display: flex;
     background-color: #0D122E;
     height: 100%;
     padding: 50px 0px;
+}
+
+@media screen and (min-width: 992px) {
+    .flexbox-contact {
+        display: flex;
+    }
+
 }
 section {
     background-color:#0D122E ;
@@ -349,6 +355,22 @@ section {
     margin-top: 80px;
 
 }
+
+
+@media screen and (max-width: 992px) {
+    .btn-container {
+        justify-content: center !important;
+    }
+
+    .contact-form {
+        padding-top: 30px;
+    }
+
+
+}
+
+
+
 
 .contact-icon {
     width: 50px;
@@ -408,6 +430,8 @@ section {
     .masthead_content {
         padding-top: 0px;
     }
+
+
 }
 
 
@@ -602,6 +626,30 @@ section {
     margin-top: 20px;
 
 }
+
+@media screen and (max-width: 992px){
+    .btn-contact {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+.about-section {
+    background-color: rgb(13, 18, 46);
+    background-image: none;
+}
+
+
+.company-name {
+    font-weight: bolder;
+}
+
+.work-keyword {
+border-bottom: 1px solid rgb(133, 255, 159)
+}
+
+
 
 
 

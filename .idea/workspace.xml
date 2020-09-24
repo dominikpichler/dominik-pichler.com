@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef8a1f8b-020a-4a6c-939f-5d95abecd040" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/contact_form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/dp.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -104,7 +106,7 @@
       <updated>1599822974428</updated>
       <workItem from="1599822977648" duration="12168000" />
       <workItem from="1599843396173" duration="24188000" />
-      <workItem from="1600597695894" duration="32571000" />
+      <workItem from="1600597695894" duration="36963000" />
     </task>
     <servers />
   </component>
@@ -139,6 +141,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1600765165670" />
+    <state x="661" y="467" key="NewPhpFileDialog" timestamp="1600958489450">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="661" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1600958489450" />
     <state x="252" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600944407508">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
