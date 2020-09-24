@@ -343,10 +343,10 @@ section {
 
 .contact-icon-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
-    width: 50%;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 80px;
 
 }
 
@@ -354,6 +354,7 @@ section {
     width: 50px;
     color: white;
     flex-grow: 4;
+    font-size: 24px;
 
 }
 
@@ -386,7 +387,12 @@ section {
 .contact-list > li {
     text-decoration: none;
     color: white;
+    padding: 20px 0;
 
+}
+
+.contact-list > a {
+    color: white !important;
 }
 
 .contact-list {
