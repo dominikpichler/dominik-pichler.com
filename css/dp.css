@@ -87,6 +87,12 @@ html, body {
 
 
 
+.svg_container {
+    position: relative;
+}
+
+
+
 
 #whatsup path:nth-child(1){
     animation: moveIt_1  1s forwards;
@@ -133,36 +139,53 @@ html, body {
 #whatsup path:nth-child(8){
 
 
-/*
-    animation: rotate 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc((--scroll) * -1s);
-
-
- */
-
-     animation: moveIt_8 1s forwards;
+    animation: moveIt_8 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
     animation-delay: 1s;
 
 
 }
 
+.about-text-dominik {
+    animation: textAppear 3s forwards;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
 
-.svg_container::after {
-    content: url('/assets/img/dominik-pichler.jpg');
-    background-color: red;
+    animation-delay: 1s;
+    position: absolute;
+    top: 15%;
+    width: 40%;
+    left: 32%;
+    color: white;
+    opacity: 0;
+}
 
+@media screen and (max-width: 767px ) {
+    .about-section {
+        display: none;
+    }
 
 }
 
 
+
+
+
+@keyframes textAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
 
 @keyframes moveIt_1 {
     from {
         transform: translateY(0);
     } to {
         transform: translate(-30%,-20%);
+              fill: rgb(133, 255, 159);
+
           }
 }
 
@@ -171,7 +194,9 @@ html, body {
         transform: translate(0,0);
     } to {
           transform: translate(-28%,-5%);
-      }
+              fill: rgb(133, 255, 159);
+
+          }
 }
 
 
@@ -180,7 +205,9 @@ html, body {
         transform: translate(0,0);
     } to {
           transform: translate(-26%,-15%);
-      }
+              fill: rgb(133, 255, 159);
+
+          }
 }
 
 @keyframes moveIt_4 {
@@ -188,7 +215,9 @@ html, body {
         transform: translate(0,0);
     } to {
           transform: translate(-24%,0%);
-      }
+              fill: rgb(133, 255, 159);
+
+          }
 }
 
 @keyframes moveIt_8 {
@@ -196,14 +225,18 @@ html, body {
         transform: translateY(0);
     } to {
           transform: translate(30%,-20%);
-      }
+              fill: rgb(133, 255, 159);
+
+          }
 }
 
 @keyframes moveIt_7 {
     from {
         transform: translate(0,0);
+        color: white;
     } to {
           transform: translate(28%,-5%);
+          fill: rgb(133, 255, 159);
       }
 }
 
@@ -213,7 +246,9 @@ html, body {
         transform: translate(0,0);
     } to {
           transform: translate(26%,-15%);
-      }
+              fill: rgb(133, 255, 159);
+
+          }
 }
 
 @keyframes moveIt_5 {
@@ -221,7 +256,9 @@ html, body {
         transform: translate(0,0);
     } to {
           transform: translate(24%,0%);
-      }
+              fill: rgb(133, 255, 159);
+
+          }
 }
 
 
@@ -512,6 +549,7 @@ section {
 }
 
 .project-heading {
+    padding-top: 5rem;
     padding-bottom: 0;
 }
 
@@ -635,9 +673,11 @@ section {
 }
 
 
-.about-section {
+.about-section.text-center {
     background-color: rgb(13, 18, 46);
     background-image: none;
+    padding-top:0 ;
+    padding-bottom: 50px;
 }
 
 
