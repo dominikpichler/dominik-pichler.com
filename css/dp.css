@@ -94,49 +94,49 @@ html, body {
 
 
 
-#whatsup path:nth-child(1){
+.testo .whatsup path:nth-child(1){
     animation: moveIt_1  1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-#whatsup path:nth-child(2){
+.testo .whatsup path:nth-child(2){
     animation: moveIt_2  1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-#whatsup path:nth-child(3){
+.testo .whatsup path:nth-child(3){
     animation: moveIt_3 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-#whatsup path:nth-child(4){
+.testo .whatsup path:nth-child(4){
     animation: moveIt_4 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-#whatsup path:nth-child(5){
+.testo .whatsup path:nth-child(5){
     animation: moveIt_6  1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-#whatsup path:nth-child(6){
+.testo .whatsup path:nth-child(6){
     animation: moveIt_5  1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-#whatsup path:nth-child(7){
+.testo .whatsup path:nth-child(7){
     animation: moveIt_7 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-#whatsup path:nth-child(8){
+.testo .whatsup path:nth-child(8){
 
 
     animation: moveIt_8 1s forwards;
@@ -146,17 +146,19 @@ html, body {
 
 }
 
-.about-text-dominik {
-    animation: textAppear 3s forwards;
-    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
-
-    animation-delay: 1s;
+ .about-text-dominik {
     position: absolute;
     top: 15%;
     width: 40%;
     left: 32%;
     color: white;
     opacity: 0;
+}
+
+.testo .about-text-dominik {
+    animation: textAppear 3s forwards;
+    animation-delay: 1s;
+    transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
 }
 
 @media screen and (max-width: 767px ) {
@@ -640,13 +642,16 @@ section {
 }
 
 .contact-form-personal .input-name:focus ~ .label_name .content-name,
-.contact-form-personal .input-name:valid ~ .label_name .content-name {
+.contact-form-personal .input-name:valid ~ .label_name .content-name,
+.contact-form-personal .input-name:hover ~ .label_name .content-name  {
     transform: translateY(-100%);
     font-size: 14px;
 }
 
 .contact-form-personal .input-name:focus ~ .label_name::after,
-.contact-form-personal .input-name:valid ~ .label_name::after {
+.contact-form-personal .input-name:valid ~ .label_name::after,
+.contact-form-personal .input-name:hover ~ .label_name::after
+{
     transform: translateX(0);
 }
 
