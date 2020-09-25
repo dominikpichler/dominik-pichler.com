@@ -24,13 +24,9 @@ if(isset($_POST['submit'])){
 
 $headers = "From:" . $from;
 mail($to,$subject,$message,$headers);
-echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
 }
 
 
-error_reporting(-1);
-ini_set('display_errors', 'On');
-set_error_handler("var_dump");
 ?>
 
 
