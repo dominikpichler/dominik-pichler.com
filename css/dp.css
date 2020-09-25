@@ -409,8 +409,6 @@ section {
 }
 
 
-
-
 .contact-icon {
     width: 50px;
     color: white;
@@ -419,7 +417,16 @@ section {
 
 }
 
+@media screen and (max-width: 992px) {
+    .contact-mobile {
+    }
 
+    .contact-form {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 
 .contact-text > h2 {
     text-transform: uppercase;
@@ -448,10 +455,12 @@ section {
 .contact-list > li {
     text-decoration: none;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
 
 }
-
+.contact-form-inner {
+    width: 80%;
+}
 .contact-list > a {
     color: white !important;
 }
@@ -511,7 +520,16 @@ section {
 
 .work-box {
     margin-bottom: 0 !important;
+    flex-direction: row;
 }
+
+
+@media screen and (max-width: 992px) {
+    .work-box:nth-child(2n){
+        flex-direction: column-reverse;
+    }
+}
+
 
 .image_full-width {
     width: 100%;
@@ -531,6 +549,13 @@ section {
     margin: 0 auto;
     max-width: 480px;
     padding-right: 0.75rem;
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .work_text-box:nth-child(2n){
+    }
 }
 
 .work-box h3{
@@ -586,6 +611,10 @@ section {
 
 .contact-details {
     margin-top: 60px;
+}
+
+.contact-list > a{
+    color: white !important;
 }
 
  .contact-form-personal {
@@ -691,7 +720,10 @@ section {
 }
 
 .work-keyword {
-border-bottom: 1px solid rgb(133, 255, 159)
+
+
+    color: rgb(133, 255, 159);
+   /* border-bottom: 1px solid rgb(133, 255, 159) */
 }
 
 

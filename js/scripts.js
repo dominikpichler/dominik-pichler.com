@@ -93,9 +93,17 @@ window.addEventListener(
 
 
 var svgContainer = document.getElementsByClassName("svg_container")[0];
+var initSet = false;
+
+var result = isElementInViewport(svgContainer);
+
+if (!result && svgContainer.classList.contains("testo")){
+    svgContainer.classList.remove("testo");
+    console.log("Removed Init");
+}
+
 
 function isElementInViewport (el) {
-
     // Special bonus for those using jQuery
     if (typeof jQuery === "function" && el instanceof jQuery) {
         el = el[0];
@@ -112,11 +120,7 @@ function isElementInViewport (el) {
     );
 }
 
-var result = isElementInViewport(svgContainer);
 
- if (!result && svgContainer.classList.contains("testo")){
-    svgContainer.classList.remove("testo")
-}
 
 
 
@@ -136,10 +140,10 @@ function onVisibilityChange(el, callback) {
 
 var handler = onVisibilityChange(svgContainer, function() {
 
-    if(svgContainer.classList.contains("testo")){
-        svgContainer.classList.remove("testo");
-    } else {
+    if(!svgContainer.classList.contains("testo")){
         svgContainer.classList.add("testo");
+    } else if(svgContainer.classList.contains("testo")){
+        svgContainer.classList.remove("testo");
     }
 
 });
@@ -147,20 +151,6 @@ var handler = onVisibilityChange(svgContainer, function() {
 
 // jQuery
 $(window).on('DOMContentLoaded load resize scroll', handler);
-
-/* // Non-jQuery
-if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', handler, false);
-    addEventListener('load', handler, false);
-    addEventListener('scroll', handler, false);
-    addEventListener('resize', handler, false);
-} else if (window.attachEvent)  {
-    attachEvent('onDOMContentLoaded', handler); // Internet Explorer 9+ :(
-    attachEvent('onload', handler);
-    attachEvent('onscroll', handler);
-    attachEvent('onresize', handler);
-}
-*/
 
 
 
@@ -202,6 +192,14 @@ form.addEventListener('submit', function (event) {
         alert(errorMessage);
     }
 }, false);
+
+
+function messageSent() {
+    var contactform = document.getElementsByClassName("contact-form")[0];
+    contactform.style.display = "none";
+
+
+}
 
 
 

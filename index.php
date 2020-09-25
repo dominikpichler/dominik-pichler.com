@@ -1,11 +1,9 @@
+
 <!--
-TODO: Mobile Rangordnung Work (FLEXBOX)
 TODO: Texte
 TODO: Minify
-TODO: Get Contact Form Working
 TODO: Animation on scroll
 TODO: Code Cleanup
-TODO: Message Box
 -->
 
 
@@ -25,7 +23,6 @@ if(isset($_POST['submit'])){
 $headers = "From:" . $from;
 mail($to,$subject,$message,$headers);
 }
-
 
 ?>
 
@@ -62,8 +59,7 @@ mail($to,$subject,$message,$headers);
 
         </a>
 
-        <!--
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+       <!--  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
         </button>
@@ -77,7 +73,7 @@ mail($to,$subject,$message,$headers);
             <ul class="navbar-nav ml-auto">
 
 
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+               <!--  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> -->
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Work</a></li>
 
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
@@ -137,7 +133,7 @@ mail($to,$subject,$message,$headers);
 
 <!-- About -->
 
-<section id="about" class="about-section text-center" id="about">
+<!-- <section id="about" class="about-section text-center" id="about">
     <div class="">
         <div class="row">
             <div class="col-lg-8 mx-auto" style=" margin-top: 0">
@@ -154,22 +150,15 @@ mail($to,$subject,$message,$headers);
                     </svg>
 
                     <div class="about-text-dominik">
-                        <!-- <img style="width: 100%;" src="assets/img/dominik-pichler_v2.jpg"> -->
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </div>
                     <div>
                     </div>
                 </div>
-
-
-
-
-
-
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <!-- Projects-->
@@ -186,8 +175,8 @@ mail($to,$subject,$message,$headers);
             <div class="col-xl-6 col-lg-6">
                 <div class="featured-text  text-lg-left work_text-box">
                     <h3>Boutique Christa</h3>
-                    <p class=" mb-0">Boutique Christa is a well known luxuary boutique in Linz, Austria.
-
+                    <p class=" mb-0"><span class="company-name">Boutique Christa</span> is a high fashion boutique for woman's clothing, located in Linz, Austria.
+                        <br><br>I was responsible for the <span class="work-keyword">Content-Production</span> and the Management of their <span class="work-keyword">Digital Apperance</span>, including their <span class="work-keyword">Website, Social Media Marketing, SEO/SEA </span> and <span class="work-keyword">Email-/Newsletter Marketing </span>.
 
                     </p>
 
@@ -200,14 +189,18 @@ mail($to,$subject,$message,$headers);
 
         </div>
 
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5 work-box">
-            <div class="col-xl-6 col-lg-6"><img class="img-fluid mb-3 mb-lg-0 image_full-width" src="assets/img/danielzellan_grande.jpg" alt="" /></div>
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5   work-box">
+            <div class="col-xl-6 col-lg-6">
+                <img class="img-fluid mb-3 mb-lg-0 image_full-width" src="assets/img/danielzellan_grande.jpg" alt="" /></div>
+
+
             <div class="col-xl-6 col-lg-6">
                 <div class="featured-text  text-lg-left work_text-box">
                     <h3>Vegan Power</h3>
                     <p class=" mb-0"><span class="company-name">Vegan Power</span> is one of the leading (vegan) supplement brands in Austria.
-                        <br><br>I was fortunate to help them launching a new <span class="work-keyword">Onlineshop </span>which increased sales while drastically reducing the maintaince costs.
-                        <br>Furthermore, I helped them with their <span class="work-keyword">Online Marketing Campaigns </span> (Social Media & E-Mail) and assisted as an technical <span class="work-keyword">SEO/SEA Consultant</span></p>
+                        <br><br>I was fortunate to help them developing their new <span class="work-keyword">Onlineshop </span>which eventually increased sales while drastically reducing the maintaince costs.
+                        <br>Furthermore, I helped them with their <span class="work-keyword">Online Marketing Campaigns </span> (Social Media & E-Mail) and assisted as an technical <span class="work-keyword">SEO/SEA Consultant</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -215,12 +208,14 @@ mail($to,$subject,$message,$headers);
         <div class="row align-items-center no-gutters mb-4 mb-lg-5 work-box">
             <div class="col-xl-6 col-lg-6">
                 <div class="featured-text  text-lg-left work_text-box">
-                    <h3>Sellner</h3>
-                    <p class=" mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                    <h3>SELLNER School + Office</h3>
+                    <p class=" mb-0"><span class="company-name">SELLNER School + Office</span> is a international manufacturer for all kinds of pens, belonging the european market leaders in this sector.
+                        <br><br> I got the chance to desgin and develop their entire new <span class="work-keyword">Website</span>. In Addtion, I also took care of the  <span class="work-keyword"> Technial SEO</span> parts as well as some <span class="work-keyword">Content-Creation</span> .
+                    </p>
                 </div>
             </div>
 
-            <div class="col-xl-6 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/boutique_christa2.jpg" alt="" /></div>
+            <div class="col-xl-6 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/sellner1.jpg" alt="" /></div>
 
         </div>
 
@@ -243,17 +238,18 @@ mail($to,$subject,$message,$headers);
                 </p>
             </div>
             <div class="contact-details">
-                <ul class="contact-list">
-                    <li><i class="fas fa-phone favicon_contact"></i>By Request</li>
-                </ul>
 
                 <ul class="contact-list">
+                    <i class=""></i>
+                    <li><i class="fab fa-github favicon_contact"></i><a target="_blank" style="color: white" href="https://github.com/dominikpichler">@dominikpichler</a></li>
+                    <li><i class="fab fa-linkedin-in favicon_contact"></i><a target="_blank" style="color: white" href="https://linkedin.com/in/dominik-pichler-811827135/">Dominik Pichler</a></li>
                     <li><i class="fas fa-envelope favicon_contact"></i>info[at]dominik-pichler[dot]com </li>
+                    <li><i class="fas fa-map-marker-alt favicon_contact"></i>80337 Munich - Germany</li>
+
+
+
                 </ul>
 
-                <ul class="contact-list">
-                    <li><i class="fas fa-map-marker-alt favicon_contact"></i>80337 Munich - Germany</li>
-                </ul>
             </div>
 
 
@@ -261,7 +257,7 @@ mail($to,$subject,$message,$headers);
 
         <div class="col-md-6 col-sm-12">
             <div class="contact-form">
-                <form action="" method="post">
+                <form action="" class="contact-form-inner" method="post">
                     <div class="contact-form-personal">
                         <input class="input-name" type="text" id="name" name="name" autocomplete="off" required><br>
                         <label class="label_name" for="name">
@@ -277,7 +273,7 @@ mail($to,$subject,$message,$headers);
                     </div>
 
                     <div class="contact-form-personal">
-                        <textarea class="input-name" id="message" name="message" cols="40" rows="5" autocomplete="off" required></textarea>
+                        <input class="input-name" type="message" id="message" name="message" autocomplete="off" required><br>
 
                         <!-- <input class="input-name" type="text" id="message" name="message" autocomplete="off" required><br> -->
                         <label class="label_name" for="message">
