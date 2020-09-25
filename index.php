@@ -1,11 +1,4 @@
 
-<!--
-TODO: Texte
-TODO: Minify
-TODO: Animation on scroll
-TODO: Code Cleanup
--->
-
 
 <?php
 
@@ -17,8 +10,8 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $subject = "Form submission";
-    $message = "Name: " . $name . " <br>" ." E-Mail: " . $email . "<br> "."Message:" . "\n\n" . $message;
+    $subject = "info@domminik-pichler.com";
+    $message = "Name: " . $name . "\n\n" ."E-Mail: " . $email . "\n\n"."Message:" . "\n\n" . $message;
 
 $headers = "From:" . $from;
 mail($to,$subject,$message,$headers);
@@ -36,7 +29,7 @@ mail($to,$subject,$message,$headers);
     <meta name="author" content="" />
     <title>Dominik Pichler</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <link href="css/styles_reduced.min.css" rel="stylesheet" />
+    <link href="css/styles-reduced.min.css" rel="stylesheet" />
     <link href="css/dp-reduced.min.css" rel="stylesheet" />
 
 </head>
@@ -125,9 +118,9 @@ mail($to,$subject,$message,$headers);
 </header>
 
 
-<!-- About -->
+<!-- About
 
-<!-- <section id="about" class="about-section text-center" id="about">
+ <section id="about" class="about-section text-center" id="about">
     <div class="">
         <div class="row">
             <div class="col-lg-8 mx-auto" style=" margin-top: 0">
@@ -152,8 +145,9 @@ mail($to,$subject,$message,$headers);
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
+-->
 
 <!-- Projects-->
 <section class="projects-section bg-main project-heading" id="projects">
