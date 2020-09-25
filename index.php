@@ -36,14 +36,8 @@ mail($to,$subject,$message,$headers);
     <meta name="author" content="" />
     <title>Dominik Pichler</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/dp.css" rel="stylesheet" />
+    <link href="css/styles_reduced.min.css" rel="stylesheet" />
+    <link href="css/dp-reduced.min.css" rel="stylesheet" />
 
 </head>
 <body id="page-top">
@@ -184,7 +178,7 @@ mail($to,$subject,$message,$headers);
             </div>
 
             <div class="col-xl-6 col-lg-6">
-                <img class="img-fluid mb-3 mb-lg-0" src="assets/img/boutique_christa.png" alt="" />
+                <img class="img-fluid mb-3 mb-lg-0" src="assets/img/boutique_christa.jpg" alt="" />
             </div>
 
         </div>
@@ -301,6 +295,8 @@ mail($to,$subject,$message,$headers);
 <footer class="footer small text-center text-white-50"><div class="container">Copyright © Dominik Pichler <?php echo date("Y"); ?>
 </div></footer>
 <!-- Bootstrap core JS-->
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 <!-- Third party plugin JS-->
@@ -308,6 +304,9 @@ mail($to,$subject,$message,$headers);
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
 
 
 
