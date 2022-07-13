@@ -3,14 +3,14 @@
 <?php
 
 if(isset($_POST['submit'])){
-    $to = "info@dominik-pichler.com"; // this is your Email address
+    $to = "office@klickbar.com"; // this is your Email address
     $from = $_POST['Dominik Pichler Web']; // this is the sender's Email address
 
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $subject = "info@domminik-pichler.com";
+    $subject = "office@klickbar.at";
     $message = "Name: " . $name . "\n\n" ."E-Mail: " . $email . "\n\n"."Message:" . "\n\n" . $message;
 
 $headers = "From:" . $from;
@@ -64,6 +64,8 @@ mail($to,$subject,$message,$headers);
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Work</a></li>
 
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">CV</a></li>
+
             </ul>
         </div>
     </div>
@@ -94,15 +96,14 @@ mail($to,$subject,$message,$headers);
 
             <div class="textbox-home">
                 <p class="basic-text">
-                    Design and Technology have always been my passions and as a web developer and designer, I get to combine the best of both worlds everyday.
-                    Over the years, this allowed me to work with many different clients across multiple industries, ranging from crash-test companies to international supplement brands.
+                    Design and Technology have always been my passions, and as a web developer and designer, I get to combine the best of both worlds every day. Over the years, this allowed me to work with many different clients across multiple industries, ranging from crash-test companies to international supplement brands.
                 </p>
             </div>
 
             <div class="textbox-home">
                 <p class="basic-text">
 
-                    I love to design and code beautifully simple things and I'm always looking for new Challenges.
+                    I love to design and code beautifully simple things while always looking for new Challenges.
                     <br><br>
                     Whenever I’m not working on projects, you can find me outdoors, climbing mountains and chasing sunsets.
                 </p>
@@ -163,8 +164,8 @@ mail($to,$subject,$message,$headers);
             <div class="col-xl-6 col-lg-6">
                 <div class="featured-text  text-lg-left work_text-box">
                     <h3>Boutique Christa</h3>
-                    <p class=" mb-0"><span class="company-name">Boutique Christa</span> is a high fashion boutique for woman's clothing, located in Linz, Austria.
-                        <br><br>I was responsible for the <span class="work-keyword">Content-Production</span> and the Management of their <span class="work-keyword">Digital Apperance</span>, including their <span class="work-keyword">Website, Social Media Marketing, SEO/SEA </span> and <span class="work-keyword">Email-/Newsletter Marketing </span>.
+                    <p class=" mb-0"><span class="company-name">Boutique Christa</span>  is a high fashion boutique for woman's clothing located in Linz, Austria.
+                        <br><br>I was responsible for the <span class="work-keyword">Content-Production</span> and the Management of their <span class="work-keyword">Digital Appearance</span>, including their <span class="work-keyword">Website, Social Media Marketing, SEO/SEA </span> and <span class="work-keyword">Email-/Newsletter Marketing</span>.
 
                     </p>
 
@@ -179,15 +180,15 @@ mail($to,$subject,$message,$headers);
 
         <div class="row align-items-center no-gutters mb-4 mb-lg-5   work-box">
             <div class="col-xl-6 col-lg-6">
-                <img class="img-fluid mb-3 mb-lg-0 image_full-width" src="assets/img/danielzellan_grande.jpg" alt="" /></div>
+                <img class="img-fluid mb-3 mb-lg-0 image_full-width" src="assets/img/appOverview.png" alt="" /></div>
 
 
             <div class="col-xl-6 col-lg-6">
                 <div class="featured-text  text-lg-left work_text-box">
                     <h3>Vegan Power</h3>
                     <p class=" mb-0"><span class="company-name">Vegan Power</span> is one of the leading (vegan) supplement brands in Austria.
-                        <br><br>I was fortunate to help them developing their new <span class="work-keyword">Onlineshop </span>which eventually increased sales while drastically reducing the maintaince costs.
-                        <br>Furthermore, I helped them with their <span class="work-keyword">Online Marketing Campaigns </span> (Social Media & E-Mail) and assisted as an technical <span class="work-keyword">SEO/SEA Consultant</span>
+                        <br><br>I was fortunate to help them develop their new <span class="work-keyword">Onlineshop </span>,which eventually increased sales while drastically reducing the maintenance costs.
+                        <br>Furthermore, I helped them with their <span class="work-keyword">Online Marketing Campaigns </span> (Social Media & E-Mail) and assisted as a technical <span class="work-keyword">SEO/SEA Consultant.</span>
                     </p>
                 </div>
             </div>
@@ -197,8 +198,8 @@ mail($to,$subject,$message,$headers);
             <div class="col-xl-6 col-lg-6">
                 <div class="featured-text  text-lg-left work_text-box">
                     <h3>SELLNER School + Office</h3>
-                    <p class=" mb-0"><span class="company-name">SELLNER School + Office</span> is a international manufacturer for all kinds of pens, belonging the european market leaders in this sector.
-                        <br><br> I got the chance to desgin and develop their entire new <span class="work-keyword">Website</span>. In Addtion, I also took care of the  <span class="work-keyword"> Technial SEO</span> parts as well as some <span class="work-keyword">Content-Creation</span> .
+                    <p class=" mb-0"><span class="company-name">SELLNER School + Office</span> is an international manufacturer of all kinds of pens, belonging to the European market leaders in this sector.
+                        <br><br> I got the chance to design and develop their entire new <span class="work-keyword">Website</span>. In addition, I also took care of the  <span class="work-keyword"> Technical SEO</span> parts and some <span class="work-keyword">Content-Creation</span>.
                     </p>
                 </div>
             </div>
@@ -206,7 +207,21 @@ mail($to,$subject,$message,$headers);
             <div class="col-xl-6 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/sellner1.jpg" alt="" /></div>
 
         </div>
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5   work-box">
+            <div class="col-xl-6 col-lg-6">
+                <img class="img-fluid mb-3 mb-lg-0 image_full-width" src="assets/img/danielzellan_grande.jpg" alt="" /></div>
 
+
+            <div class="col-xl-6 col-lg-6">
+                <div class="featured-text  text-lg-left work_text-box">
+                    <h3>Vegan Power</h3>
+                    <p class=" mb-0"><span class="company-name">Vegan Power</span> is one of the leading (vegan) supplement brands in Austria.
+                        <br><br>I was fortunate to help them develop their new <span class="work-keyword">Onlineshop </span>,which eventually increased sales while drastically reducing the maintenance costs.
+                        <br>Furthermore, I helped them with their <span class="work-keyword">Online Marketing Campaigns </span> (Social Media & E-Mail) and assisted as a technical <span class="work-keyword">SEO/SEA Consultant.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
     </div>
@@ -222,7 +237,7 @@ mail($to,$subject,$message,$headers);
                 <h2> Get in touch</h2>
                 <p>
                     Feel free to send me a message anytime.<br>
-                    I'd love to talk about you and your projects
+                    I'd love to talk about you and your projects.
                 </p>
             </div>
             <div class="contact-details">
@@ -231,7 +246,7 @@ mail($to,$subject,$message,$headers);
                     <i class=""></i>
                     <li><i class="fab fa-github favicon_contact"></i><a target="_blank" style="color: white" href="https://github.com/dominikpichler">@dominikpichler</a></li>
                     <li><i class="fab fa-linkedin-in favicon_contact"></i><a target="_blank" style="color: white" href="https://linkedin.com/in/dominik-pichler-811827135/">Dominik Pichler</a></li>
-                    <li><i class="fas fa-envelope favicon_contact"></i>info[at]dominik-pichler[dot]com </li>
+                    <li><i class="fas fa-envelope favicon_contact"></i>office[at]klickbar[dot]com </li>
                     <li><i class="fas fa-map-marker-alt favicon_contact"></i>80337 Munich - Germany</li>
 
 
@@ -242,6 +257,7 @@ mail($to,$subject,$message,$headers);
 
 
         </div>
+
 
         <div class="col-md-6 col-sm-12">
             <div class="contact-form">
@@ -282,6 +298,7 @@ mail($to,$subject,$message,$headers);
 
     </div>
 </section>
+
 
 
 
