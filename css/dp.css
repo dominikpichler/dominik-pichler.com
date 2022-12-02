@@ -2,12 +2,12 @@
     font-family: poppins_regular;
     src: url(../assets/fonts/Poppins-Regular.ttf);
 }
+
 html, body {
     font-family: poppins_regular, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
 
 
 /* --  Logo SVG--*/
@@ -16,43 +16,45 @@ html, body {
     animation: fill 1s ease-in forwards 2.5s;
 }
 
-#logo path:nth-child(1){
+#logo path:nth-child(1) {
     stroke-dasharray: 345.6607666015625;
     stroke-dashoffset: 345.6607666015625;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(2){
+#logo path:nth-child(2) {
     stroke-dasharray: 300.9988098144531;
     stroke-dashoffset: 300.9988098144531;
     animation: line-anim 2s ease forwards 0.3s;
 
 
-
 }
 
-#logo path:nth-child(3){
+#logo path:nth-child(3) {
     stroke-dasharray: 248.84634399414062;
     stroke-dashoffset: 248.84634399414062;
     animation: line-anim 2s ease forwards 0.6s;
 
 
 }
-#logo path:nth-child(4){
+
+#logo path:nth-child(4) {
     stroke-dasharray: 300.99896240234375;
     stroke-dashoffset: 300.99896240234375;
     animation: line-anim 2s ease forwards 0.9s;
 
 
 }
-#logo path:nth-child(5){
+
+#logo path:nth-child(5) {
     stroke-dasharray: 174.9119873046875;
     stroke-dashoffset: 174.9119873046875;
     animation: line-anim 2s ease forwards 1.2s;
 
 
 }
-#logo path:nth-child(6){
+
+#logo path:nth-child(6) {
     stroke-dasharray: 254.22616577148438;
     stroke-dashoffset: 254.22616577148438;
     animation: line-anim 2s ease forwards 1.5s;
@@ -60,7 +62,7 @@ html, body {
 
 }
 
-#logo path:nth-child(7){
+#logo path:nth-child(7) {
     stroke-dasharray: 351.95111083984375;
     stroke-dashoffset: 351.95111083984375;
     animation: line-anim 2s ease forwards 1.5s;
@@ -68,7 +70,7 @@ html, body {
 
 }
 
-#logo path:nth-child(8){
+#logo path:nth-child(8) {
     stroke-dasharray: 300.99945068359375;
     stroke-dashoffset: 300.99945068359375;
     animation: line-anim 2s ease forwards 1.5s;
@@ -76,15 +78,13 @@ html, body {
 
 }
 
-#logo path:nth-child(9){
+#logo path:nth-child(9) {
     stroke-dasharray: 182.05319213867188;
     stroke-dashoffset: 182.05319213867188;
-    animation: line-anim 2s  forwards 1.5s;
-
+    animation: line-anim 2s forwards 1.5s;
 
 
 }
-
 
 
 .svg_container {
@@ -92,51 +92,49 @@ html, body {
 }
 
 
-
-
-.testo .whatsup path:nth-child(1){
-    animation: moveIt_1  1s forwards;
+.testo .whatsup path:nth-child(1) {
+    animation: moveIt_1 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-.testo .whatsup path:nth-child(2){
-    animation: moveIt_2  1s forwards;
+.testo .whatsup path:nth-child(2) {
+    animation: moveIt_2 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-.testo .whatsup path:nth-child(3){
+.testo .whatsup path:nth-child(3) {
     animation: moveIt_3 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-.testo .whatsup path:nth-child(4){
+.testo .whatsup path:nth-child(4) {
     animation: moveIt_4 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-.testo .whatsup path:nth-child(5){
-    animation: moveIt_6  1s forwards;
+.testo .whatsup path:nth-child(5) {
+    animation: moveIt_6 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-.testo .whatsup path:nth-child(6){
-    animation: moveIt_5  1s forwards;
+.testo .whatsup path:nth-child(6) {
+    animation: moveIt_5 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-.testo .whatsup path:nth-child(7){
+.testo .whatsup path:nth-child(7) {
     animation: moveIt_7 1s forwards;
     transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
     animation-delay: 1s;
 }
 
-.testo .whatsup path:nth-child(8){
+.testo .whatsup path:nth-child(8) {
 
 
     animation: moveIt_8 1s forwards;
@@ -146,7 +144,7 @@ html, body {
 
 }
 
- .about-text-dominik {
+.about-text-dominik {
     position: absolute;
     top: 15%;
     width: 40%;
@@ -169,9 +167,6 @@ html, body {
 }
 
 
-
-
-
 @keyframes textAppear {
     from {
         opacity: 0;
@@ -184,87 +179,92 @@ html, body {
 @keyframes moveIt_1 {
     from {
         transform: translateY(0);
-    } to {
-        transform: translate(-30%,-20%);
-              fill: rgb(133, 255, 159);
+    }
+    to {
+        transform: translate(-30%, -20%);
+        fill: rgb(133, 255, 159);
 
-          }
+    }
 }
 
 @keyframes moveIt_2 {
     from {
-        transform: translate(0,0);
-    } to {
-          transform: translate(-28%,-5%);
-              fill: rgb(133, 255, 159);
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-28%, -5%);
+        fill: rgb(133, 255, 159);
 
-          }
+    }
 }
 
 
 @keyframes moveIt_3 {
     from {
-        transform: translate(0,0);
-    } to {
-          transform: translate(-26%,-15%);
-              fill: rgb(133, 255, 159);
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-26%, -15%);
+        fill: rgb(133, 255, 159);
 
-          }
+    }
 }
 
 @keyframes moveIt_4 {
     from {
-        transform: translate(0,0);
-    } to {
-          transform: translate(-24%,0%);
-              fill: rgb(133, 255, 159);
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-24%, 0%);
+        fill: rgb(133, 255, 159);
 
-          }
+    }
 }
 
 @keyframes moveIt_8 {
     from {
         transform: translateY(0);
-    } to {
-          transform: translate(30%,-20%);
-              fill: rgb(133, 255, 159);
+    }
+    to {
+        transform: translate(30%, -20%);
+        fill: rgb(133, 255, 159);
 
-          }
+    }
 }
 
 @keyframes moveIt_7 {
     from {
-        transform: translate(0,0);
+        transform: translate(0, 0);
         color: white;
-    } to {
-          transform: translate(28%,-5%);
-          fill: rgb(133, 255, 159);
-      }
+    }
+    to {
+        transform: translate(28%, -5%);
+        fill: rgb(133, 255, 159);
+    }
 }
 
 
 @keyframes moveIt_6 {
     from {
-        transform: translate(0,0);
-    } to {
-          transform: translate(26%,-15%);
-              fill: rgb(133, 255, 159);
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(26%, -15%);
+        fill: rgb(133, 255, 159);
 
-          }
+    }
 }
 
 @keyframes moveIt_5 {
     from {
-        transform: translate(0,0);
-    } to {
-          transform: translate(24%,0%);
-              fill: rgb(133, 255, 159);
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(24%, 0%);
+        fill: rgb(133, 255, 159);
 
-          }
+    }
 }
-
-
-
 
 
 @keyframes line-anim {
@@ -275,13 +275,12 @@ html, body {
 }
 
 @keyframes fill {
-   from {
-       fill: transparent;
-   }
+    from {
+        fill: transparent;
+    }
 
     to {
-        fill: #85FF9F
-    ;
+        fill: #85FF9F;
     }
 }
 
@@ -302,7 +301,7 @@ html, body {
 
 }
 
-.text-home{
+.text-home {
     display: flex;
     width: 100%;
     padding-top: 100px;
@@ -331,14 +330,13 @@ html, body {
     width: 50%;
 }
 
-.textbox-home:nth-child(1){
+.textbox-home:nth-child(1) {
     padding-right: 5%;
 }
 
-.textbox-home:nth-child(2){
+.textbox-home:nth-child(2) {
     padding-left: 5%;
 }
-
 
 
 .basic-text {
@@ -368,10 +366,10 @@ html, body {
     }
 
 }
-section {
-    background-color:#0D122E ;
-}
 
+section {
+    background-color: #0D122E;
+}
 
 
 .contact-text {
@@ -383,7 +381,7 @@ section {
 .contact-container {
     display: block;
     padding-top: 50px;
-    margin:0;
+    margin: 0;
 }
 
 .contact-icon-container {
@@ -458,9 +456,11 @@ section {
     padding: 10px 0;
 
 }
+
 .contact-form-inner {
     width: 80%;
 }
+
 .contact-list > a {
     color: white !important;
 }
@@ -471,9 +471,9 @@ section {
 }
 
 @media screen and (max-width: 992px) {
-   #logo {
-       width: 80%;
-   }
+    #logo {
+        width: 80%;
+    }
 
     .masthead_content {
         padding-top: 0px;
@@ -489,7 +489,7 @@ section {
         display: block;
     }
 
-    .textbox-home:nth-child(2){
+    .textbox-home:nth-child(2) {
         padding-left: 0;
     }
 
@@ -499,7 +499,7 @@ section {
 }
 
 
-.heading_work{
+.heading_work {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -510,7 +510,7 @@ section {
 }
 
 
-.box_underline:after{
+.box_underline:after {
     content: "";
     position: absolute;
     width: 5%;
@@ -525,7 +525,7 @@ section {
 
 
 @media screen and (max-width: 992px) {
-    .work-box:nth-child(2n){
+    .work-box:nth-child(2n) {
         flex-direction: column-reverse;
     }
 }
@@ -545,7 +545,8 @@ section {
     max-width: 480px;
     padding-left: 0.75rem;
 }
-.work_text-box:nth-child(2n){
+
+.work_text-box:nth-child(2n) {
     margin: 0 auto;
     max-width: 480px;
     padding-right: 0.75rem;
@@ -554,11 +555,11 @@ section {
 
 
 @media screen and (max-width: 992px) {
-    .work_text-box:nth-child(2n){
+    .work_text-box:nth-child(2n) {
     }
 }
 
-.work-box h3{
+.work-box h3 {
     line-height: 2;
     font-weight: bold;
 }
@@ -581,7 +582,7 @@ section {
 }
 
 .bg-main {
-    background-color: rgba(13,18,46,1);
+    background-color: rgba(13, 18, 46, 1);
 }
 
 
@@ -595,13 +596,13 @@ section {
 }
 
 
-.contact-form{
+.contact-form {
     border-radius: 10px;
     margin-top: 20%;
     margin-right: 0;
     background-color: white;
     height: 90%;
-    width:100%;
+    width: 100%;
     max-width: 500px;
     display: flex;
     justify-content: space-around;
@@ -613,11 +614,11 @@ section {
     margin-top: 60px;
 }
 
-.contact-list > a{
+.contact-list > a {
     color: white !important;
 }
 
- .contact-form-personal {
+.contact-form-personal {
 
     font-size: 16px;
     width: 100%;
@@ -628,26 +629,24 @@ section {
 
 }
 
- .contact-form-personal .input-name {
-     width: 100%;
-     height: 100%;
-     padding-top: 20px;
-     border: none;
-     outline: none;
- }
-
+.contact-form-personal .input-name {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
 
 
 .contact-form-personal .label_name {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     pointer-events: none;
-     border-bottom: 1px solid black;
- }
-
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
 
 
 .contact-form-personal .label_name::after {
@@ -656,7 +655,7 @@ section {
     height: 100%;
     width: 100%;
 
-    border-bottom:  2px solid rgb(133, 255, 159);
+    border-bottom: 2px solid rgb(133, 255, 159);
     left: 0;
     bottom: -1px;
     transform: translateX(-100%);
@@ -672,15 +671,14 @@ section {
 
 .contact-form-personal .input-name:focus ~ .label_name .content-name,
 .contact-form-personal .input-name:valid ~ .label_name .content-name,
-.contact-form-personal .input-name:hover ~ .label_name .content-name  {
+.contact-form-personal .input-name:hover ~ .label_name .content-name {
     transform: translateY(-100%);
     font-size: 14px;
 }
 
 .contact-form-personal .input-name:focus ~ .label_name::after,
 .contact-form-personal .input-name:valid ~ .label_name::after,
-.contact-form-personal .input-name:hover ~ .label_name::after
-{
+.contact-form-personal .input-name:hover ~ .label_name::after {
     transform: translateX(0);
 }
 
@@ -699,7 +697,7 @@ section {
 
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
     .btn-contact {
         margin-bottom: 50px;
     }
@@ -710,7 +708,7 @@ section {
 .about-section.text-center {
     background-color: rgb(13, 18, 46);
     background-image: none;
-    padding-top:0 ;
+    padding-top: 0;
     padding-bottom: 50px;
 }
 
@@ -723,7 +721,7 @@ section {
 
 
     color: rgb(133, 255, 159);
-   /* border-bottom: 1px solid rgb(133, 255, 159) */
+    /* border-bottom: 1px solid rgb(133, 255, 159) */
 }
 
 
