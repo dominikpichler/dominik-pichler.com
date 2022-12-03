@@ -105,7 +105,7 @@ display: flex;
   5. >>> Experience Style
 ----------------------------------------------------------------*/
 .single_experience {
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 
 .ds-experience-section{ padding-bottom: 120px; }
@@ -131,7 +131,21 @@ span.ds-department{ color: #FFFFFF; font-weight: 500; font-size: 18px; padding-b
 }
 .client_element {
   width: 25%;
+  margin: auto;
+    display: flex;
 
+}
+
+.client_logo {
+    width: 75%;
+    margin: auto;
+}
+
+#bmw_logo{
+    width: 40%;
+}
+.quadratic_logo {
+    width: 30%;
 }
 
 
