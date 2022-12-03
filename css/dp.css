@@ -521,6 +521,7 @@ section {
 .work-box {
     margin-bottom: 0 !important;
     flex-direction: row;
+    padding: 50px 0px;
 }
 
 
@@ -727,6 +728,8 @@ section {
 }
 
 
-
+.animation-box {
+    padding-bottom: 200px;
+}
 
 
