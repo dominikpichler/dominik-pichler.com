@@ -1,8 +1,6 @@
-
-
 <?php
 
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     $to = "info@dominik-pichler.com"; // this is your Email address
     $from = $_POST['Dominik Pichler Web']; // this is the sender's Email address
 
@@ -11,26 +9,26 @@ if(isset($_POST['submit'])){
     $message = $_POST['message'];
 
     $subject = "info@domminik-pichler.com";
-    $message = "Name: " . $name . "\n\n" ."E-Mail: " . $email . "\n\n"."Message:" . "\n\n" . $message;
+    $message = "Name: " . $name . "\n\n" . "E-Mail: " . $email . "\n\n" . "Message:" . "\n\n" . $message;
 
-$headers = "From:" . $from;
-mail($to,$subject,$message,$headers);
+    $headers = "From:" . $from;
+    mail($to, $subject, $message, $headers);
 }
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
     <title>Dominik Pichler</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <link href="css/styles-reduced.min.css" rel="stylesheet" />
-    <link href="css/dp-reduced.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <link href="css/styles-reduced.min.css" rel="stylesheet"/>
+    <link href="css/dp.css" rel="stylesheet"/>
+    <link href="css/animations.css" rel="stylesheet"/>
+
 
 </head>
 <body id="page-top">
@@ -40,17 +38,15 @@ mail($to,$subject,$message,$headers);
         <a class="navbar-brand js-scroll-trigger" href="index.php">
 
             <svg width="100" viewBox="0 0 168 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.048 56.416C0.682667 59.1893 0 62.4107 0 66.08C0 67.4458 0.0945791 68.7525 0.283737 70H11.7822C11.3514 68.8534 11.136 67.5467 11.136 66.08C11.136 63.3493 11.8827 61.216 13.376 59.68C14.912 58.1013 16.768 57.312 18.944 57.312C21.12 57.312 22.9547 58.1013 24.448 59.68C25.984 61.2587 26.752 63.4133 26.752 66.144C26.752 67.5911 26.5363 68.8764 26.1049 70H37.696V36.64H26.752V53.216C25.6427 51.552 24.1067 50.2293 22.144 49.248C20.224 48.2667 18.0907 47.776 15.744 47.776C12.8 47.776 10.1333 48.5227 7.744 50.016C5.35467 51.5093 3.456 53.6427 2.048 56.416ZM80.2234 70C80.4461 68.7718 80.5575 67.4865 80.5575 66.144C80.5575 62.4747 79.7468 59.2533 78.1255 56.48C76.5042 53.664 74.2855 51.5093 71.4695 50.016C68.6535 48.5227 65.4962 47.776 61.9975 47.776C58.4988 47.776 55.3415 48.5227 52.5255 50.016C49.7095 51.5093 47.4908 53.664 45.8695 56.48C44.2482 59.2533 43.4375 62.4747 43.4375 66.144C43.4375 67.4912 43.5415 68.7765 43.7494 70H55.1056C54.7509 68.8865 54.5735 67.6012 54.5735 66.144C54.5735 63.2427 55.2775 61.0453 56.6855 59.552C58.0935 58.016 59.8642 57.248 61.9975 57.248C64.0882 57.248 65.8375 58.016 67.2455 59.552C68.6962 61.088 69.4215 63.2853 69.4215 66.144C69.4215 67.6012 69.2275 68.8865 68.8395 70H80.2234ZM97.3075 70H86.3635V48.288H97.3075V52.768C98.4168 51.2747 99.8675 50.1013 101.66 49.248C103.451 48.352 105.478 47.904 107.74 47.904C110.428 47.904 112.817 48.48 114.908 49.632C117.041 50.784 118.705 52.4267 119.9 54.56C121.137 52.5973 122.822 50.9973 124.956 49.76C127.089 48.5227 129.414 47.904 131.932 47.904C136.369 47.904 139.889 49.248 142.492 51.936C145.137 54.624 146.46 58.3573 146.46 63.136V70H135.579V64.608C135.579 62.304 134.961 60.5333 133.724 59.296C132.529 58.016 130.865 57.376 128.732 57.376C126.598 57.376 124.913 58.016 123.676 59.296C122.481 60.5333 121.883 62.304 121.883 64.608V70H111.004V64.608C111.004 62.304 110.385 60.5333 109.147 59.296C107.953 58.016 106.289 57.376 104.156 57.376C102.022 57.376 100.337 58.016 99.0995 59.296C97.9048 60.5333 97.3075 62.304 97.3075 64.608V70Z" fill="#85FF9F"/>
-                <path d="M157.296 70.512C155.376 70.512 153.797 69.9573 152.56 68.848C151.365 67.696 150.768 66.288 150.768 64.624C150.768 62.9173 151.365 61.488 152.56 60.336C153.797 59.184 155.376 58.608 157.296 58.608C159.173 58.608 160.709 59.184 161.904 60.336C163.141 61.488 163.76 62.9173 163.76 64.624C163.76 66.288 163.141 67.696 161.904 68.848C160.709 69.9573 159.173 70.512 157.296 70.512Z" fill="#85FF9F"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2.048 56.416C0.682667 59.1893 0 62.4107 0 66.08C0 67.4458 0.0945791 68.7525 0.283737 70H11.7822C11.3514 68.8534 11.136 67.5467 11.136 66.08C11.136 63.3493 11.8827 61.216 13.376 59.68C14.912 58.1013 16.768 57.312 18.944 57.312C21.12 57.312 22.9547 58.1013 24.448 59.68C25.984 61.2587 26.752 63.4133 26.752 66.144C26.752 67.5911 26.5363 68.8764 26.1049 70H37.696V36.64H26.752V53.216C25.6427 51.552 24.1067 50.2293 22.144 49.248C20.224 48.2667 18.0907 47.776 15.744 47.776C12.8 47.776 10.1333 48.5227 7.744 50.016C5.35467 51.5093 3.456 53.6427 2.048 56.416ZM80.2234 70C80.4461 68.7718 80.5575 67.4865 80.5575 66.144C80.5575 62.4747 79.7468 59.2533 78.1255 56.48C76.5042 53.664 74.2855 51.5093 71.4695 50.016C68.6535 48.5227 65.4962 47.776 61.9975 47.776C58.4988 47.776 55.3415 48.5227 52.5255 50.016C49.7095 51.5093 47.4908 53.664 45.8695 56.48C44.2482 59.2533 43.4375 62.4747 43.4375 66.144C43.4375 67.4912 43.5415 68.7765 43.7494 70H55.1056C54.7509 68.8865 54.5735 67.6012 54.5735 66.144C54.5735 63.2427 55.2775 61.0453 56.6855 59.552C58.0935 58.016 59.8642 57.248 61.9975 57.248C64.0882 57.248 65.8375 58.016 67.2455 59.552C68.6962 61.088 69.4215 63.2853 69.4215 66.144C69.4215 67.6012 69.2275 68.8865 68.8395 70H80.2234ZM97.3075 70H86.3635V48.288H97.3075V52.768C98.4168 51.2747 99.8675 50.1013 101.66 49.248C103.451 48.352 105.478 47.904 107.74 47.904C110.428 47.904 112.817 48.48 114.908 49.632C117.041 50.784 118.705 52.4267 119.9 54.56C121.137 52.5973 122.822 50.9973 124.956 49.76C127.089 48.5227 129.414 47.904 131.932 47.904C136.369 47.904 139.889 49.248 142.492 51.936C145.137 54.624 146.46 58.3573 146.46 63.136V70H135.579V64.608C135.579 62.304 134.961 60.5333 133.724 59.296C132.529 58.016 130.865 57.376 128.732 57.376C126.598 57.376 124.913 58.016 123.676 59.296C122.481 60.5333 121.883 62.304 121.883 64.608V70H111.004V64.608C111.004 62.304 110.385 60.5333 109.147 59.296C107.953 58.016 106.289 57.376 104.156 57.376C102.022 57.376 100.337 58.016 99.0995 59.296C97.9048 60.5333 97.3075 62.304 97.3075 64.608V70Z"
+                      fill="#85FF9F"/>
+                <path d="M157.296 70.512C155.376 70.512 153.797 69.9573 152.56 68.848C151.365 67.696 150.768 66.288 150.768 64.624C150.768 62.9173 151.365 61.488 152.56 60.336C153.797 59.184 155.376 58.608 157.296 58.608C159.173 58.608 160.709 59.184 161.904 60.336C163.141 61.488 163.76 62.9173 163.76 64.624C163.76 66.288 163.141 67.696 161.904 68.848C160.709 69.9573 159.173 70.512 157.296 70.512Z"
+                      fill="#85FF9F"/>
             </svg>
 
         </a>
 
-       <!--  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-        </button>
-        -->
 
         <div>
 
@@ -60,32 +56,34 @@ mail($to,$subject,$message,$headers);
             <ul class="navbar-nav ml-auto">
 
 
-               <!--  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> -->
+                <!--  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> -->
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Work</a></li>
 
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
-</nav></nav>
+</nav>
+</nav>
 <!-- Masthead-->
 <header class="masthead">
     <div class="container h-100 masthead_content">
-        <div class="heading-section" >
-            <h1 class="heading_home">Hi, I'm Dominik.<br>I'm a web</h1>
+        <div class="heading-section">
+            <h1 class="heading_home">Hi, I'm Dominik.<br>I'm a Data</h1>
 
             <div>
-                <svg id="logo" width="497" viewBox="0 0 497 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M26.2 4.60799C33.304 4.60799 39.512 6.01599 44.824 8.83199C50.136 11.648 54.232 15.616 57.112 20.736C60.056 25.792 61.528 31.648 61.528 38.304C61.528 44.896 60.056 50.752 57.112 55.872C54.232 60.992 50.104 64.96 44.728 67.776C39.416 70.592 33.24 72 26.2 72H0.951996V4.60799H26.2ZM25.144 57.792C31.352 57.792 36.184 56.096 39.64 52.704C43.096 49.312 44.824 44.512 44.824 38.304C44.824 32.096 43.096 27.264 39.64 23.808C36.184 20.352 31.352 18.624 25.144 18.624H17.368V57.792H25.144Z" stroke="#85FF9F"/>
-                    <path d="M121.198 44.352C121.198 45.888 121.102 47.488 120.91 49.152H83.758C84.014 52.48 85.07 55.04 86.926 56.832C88.846 58.56 91.182 59.424 93.934 59.424C98.03 59.424 100.878 57.696 102.478 54.24H119.95C119.054 57.76 117.422 60.928 115.054 63.744C112.75 66.56 109.838 68.768 106.318 70.368C102.798 71.968 98.862 72.768 94.51 72.768C89.262 72.768 84.59 71.648 80.494 69.408C76.398 67.168 73.198 63.968 70.894 59.808C68.59 55.648 67.438 50.784 67.438 45.216C67.438 39.648 68.558 34.784 70.798 30.624C73.102 26.464 76.302 23.264 80.398 21.024C84.494 18.784 89.198 17.664 94.51 17.664C99.694 17.664 104.302 18.752 108.334 20.928C112.366 23.104 115.502 26.208 117.742 30.24C120.046 34.272 121.198 38.976 121.198 44.352ZM104.398 40.032C104.398 37.216 103.438 34.976 101.518 33.312C99.598 31.648 97.198 30.816 94.318 30.816C91.566 30.816 89.23 31.616 87.31 33.216C85.454 34.816 84.302 37.088 83.854 40.032H104.398Z" stroke="#85FF9F"/>
-                    <path d="M153.954 56.64L165.57 18.432H183.042L164.034 72H143.778L124.77 18.432H142.338L153.954 56.64Z" stroke="#85FF9F"/>
-                    <path d="M240.448 44.352C240.448 45.888 240.352 47.488 240.16 49.152H203.008C203.264 52.48 204.32 55.04 206.176 56.832C208.096 58.56 210.432 59.424 213.184 59.424C217.28 59.424 220.128 57.696 221.728 54.24H239.2C238.304 57.76 236.672 60.928 234.304 63.744C232 66.56 229.088 68.768 225.568 70.368C222.048 71.968 218.112 72.768 213.76 72.768C208.512 72.768 203.84 71.648 199.744 69.408C195.648 67.168 192.448 63.968 190.144 59.808C187.84 55.648 186.688 50.784 186.688 45.216C186.688 39.648 187.808 34.784 190.048 30.624C192.352 26.464 195.552 23.264 199.648 21.024C203.744 18.784 208.448 17.664 213.76 17.664C218.944 17.664 223.552 18.752 227.584 20.928C231.616 23.104 234.752 26.208 236.992 30.24C239.296 34.272 240.448 38.976 240.448 44.352ZM223.648 40.032C223.648 37.216 222.688 34.976 220.768 33.312C218.848 31.648 216.448 30.816 213.568 30.816C210.816 30.816 208.48 31.616 206.56 33.216C204.704 34.816 203.552 37.088 203.104 40.032H223.648Z" stroke="#85FF9F"/>
-                    <path d="M265.524 0.959991V72H249.108V0.959991H265.524Z" stroke="#85FF9F"/>
-                    <path d="M301.805 72.768C296.557 72.768 291.821 71.648 287.597 69.408C283.437 67.168 280.141 63.968 277.709 59.808C275.341 55.648 274.157 50.784 274.157 45.216C274.157 39.712 275.373 34.88 277.805 30.72C280.237 26.496 283.565 23.264 287.789 21.024C292.013 18.784 296.749 17.664 301.997 17.664C307.245 17.664 311.981 18.784 316.205 21.024C320.429 23.264 323.757 26.496 326.189 30.72C328.621 34.88 329.837 39.712 329.837 45.216C329.837 50.72 328.589 55.584 326.093 59.808C323.661 63.968 320.301 67.168 316.013 69.408C311.789 71.648 307.053 72.768 301.805 72.768ZM301.805 58.56C304.941 58.56 307.597 57.408 309.773 55.104C312.013 52.8 313.133 49.504 313.133 45.216C313.133 40.928 312.045 37.632 309.869 35.328C307.757 33.024 305.133 31.872 301.997 31.872C298.797 31.872 296.141 33.024 294.029 35.328C291.917 37.568 290.861 40.864 290.861 45.216C290.861 49.504 291.885 52.8 293.933 55.104C296.045 57.408 298.669 58.56 301.805 58.56Z" stroke="#85FF9F"/>
-                    <path d="M354.962 26.016C356.562 23.52 358.77 21.504 361.586 19.968C364.402 18.432 367.698 17.664 371.474 17.664C375.89 17.664 379.89 18.784 383.474 21.024C387.058 23.264 389.874 26.464 391.922 30.624C394.034 34.784 395.09 39.616 395.09 45.12C395.09 50.624 394.034 55.488 391.922 59.712C389.874 63.872 387.058 67.104 383.474 69.408C379.89 71.648 375.89 72.768 371.474 72.768C367.762 72.768 364.466 72 361.586 70.464C358.77 68.928 356.562 66.944 354.962 64.512V97.536H338.546V18.432H354.962V26.016ZM378.386 45.12C378.386 41.024 377.234 37.824 374.93 35.52C372.69 33.152 369.906 31.968 366.578 31.968C363.314 31.968 360.53 33.152 358.226 35.52C355.986 37.888 354.866 41.12 354.866 45.216C354.866 49.312 355.986 52.544 358.226 54.912C360.53 57.28 363.314 58.464 366.578 58.464C369.842 58.464 372.626 57.28 374.93 54.912C377.234 52.48 378.386 49.216 378.386 45.12Z" stroke="#85FF9F"/>
-                    <path d="M454.198 44.352C454.198 45.888 454.102 47.488 453.91 49.152H416.758C417.014 52.48 418.07 55.04 419.926 56.832C421.846 58.56 424.182 59.424 426.934 59.424C431.03 59.424 433.878 57.696 435.478 54.24H452.95C452.054 57.76 450.422 60.928 448.054 63.744C445.75 66.56 442.838 68.768 439.318 70.368C435.798 71.968 431.862 72.768 427.51 72.768C422.262 72.768 417.59 71.648 413.494 69.408C409.398 67.168 406.198 63.968 403.894 59.808C401.59 55.648 400.438 50.784 400.438 45.216C400.438 39.648 401.558 34.784 403.798 30.624C406.102 26.464 409.302 23.264 413.398 21.024C417.494 18.784 422.198 17.664 427.51 17.664C432.694 17.664 437.302 18.752 441.334 20.928C445.366 23.104 448.502 26.208 450.742 30.24C453.046 34.272 454.198 38.976 454.198 44.352ZM437.398 40.032C437.398 37.216 436.438 34.976 434.518 33.312C432.598 31.648 430.198 30.816 427.318 30.816C424.566 30.816 422.23 31.616 420.31 33.216C418.454 34.816 417.302 37.088 416.854 40.032H437.398Z" stroke="#85FF9F"/>
-                    <path d="M479.274 27.36C481.194 24.416 483.594 22.112 486.474 20.448C489.354 18.72 492.554 17.856 496.074 17.856V35.232H491.562C487.466 35.232 484.394 36.128 482.346 37.92C480.298 39.648 479.274 42.72 479.274 47.136V72H462.858V18.432H479.274V27.36Z" stroke="#85FF9F"/>
+                <svg id="logo" width="599" height="96" viewBox="0 0 599 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33.144 93.896C27.256 93.896 21.9654 92.872 17.272 90.824C12.664 88.6907 9.03735 85.7893 6.39202 82.12C3.74669 78.3653 2.38135 74.056 2.29602 69.192H14.712C15.1387 73.3733 16.8454 76.9147 19.832 79.816C22.904 82.632 27.3414 84.04 33.144 84.04C38.6907 84.04 43.0427 82.6747 46.2 79.944C49.4427 77.128 51.064 73.544 51.064 69.192C51.064 65.7787 50.1254 63.0053 48.248 60.872C46.3707 58.7387 44.024 57.1173 41.208 56.008C38.392 54.8987 34.5947 53.704 29.816 52.424C23.928 50.888 19.192 49.352 15.608 47.816C12.1094 46.28 9.08002 43.8907 6.52002 40.648C4.04535 37.32 2.80802 32.8827 2.80802 27.336C2.80802 22.472 4.04535 18.1627 6.52002 14.408C8.99469 10.6533 12.4507 7.75199 16.888 5.70399C21.4107 3.65599 26.5734 2.63199 32.376 2.63199C40.7387 2.63199 47.5654 4.72266 52.856 8.90399C58.232 13.0853 61.2614 18.632 61.944 25.544H49.144C48.7174 22.1307 46.9254 19.144 43.768 16.584C40.6107 13.9387 36.4294 12.616 31.224 12.616C26.36 12.616 22.392 13.896 19.32 16.456C16.248 18.9307 14.712 22.4293 14.712 26.952C14.712 30.1947 15.608 32.84 17.4 34.888C19.2774 36.936 21.5387 38.5147 24.184 39.624C26.9147 40.648 30.712 41.8427 35.576 43.208C41.464 44.8293 46.2 46.4507 49.784 48.072C53.368 49.608 56.44 52.04 59 55.368C61.56 58.6107 62.84 63.048 62.84 68.68C62.84 73.032 61.688 77.128 59.384 80.968C57.08 84.808 53.6667 87.9227 49.144 90.312C44.6214 92.7013 39.288 93.896 33.144 93.896Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
+                    <path d="M75.629 48.328C75.629 39.624 77.5917 31.816 81.517 24.904C85.4424 17.9067 90.7757 12.4453 97.517 8.51999C104.344 4.59466 111.896 2.63199 120.173 2.63199C129.901 2.63199 138.392 4.97866 145.645 9.67199C152.898 14.3653 158.189 21.0213 161.517 29.64H147.565C145.09 24.264 141.506 20.1253 136.813 17.224C132.205 14.3227 126.658 12.872 120.173 12.872C113.944 12.872 108.354 14.3227 103.405 17.224C98.4557 20.1253 94.573 24.264 91.757 29.64C88.941 34.9307 87.533 41.16 87.533 48.328C87.533 55.4107 88.941 61.64 91.757 67.016C94.573 72.3067 98.4557 76.4027 103.405 79.304C108.354 82.2053 113.944 83.656 120.173 83.656C126.658 83.656 132.205 82.248 136.813 79.432C141.506 76.5307 145.09 72.392 147.565 67.016H161.517C158.189 75.5493 152.898 82.1627 145.645 86.856C138.392 91.464 129.901 93.768 120.173 93.768C111.896 93.768 104.344 91.848 97.517 88.008C90.7757 84.0827 85.4424 78.664 81.517 71.752C77.5917 64.84 75.629 57.032 75.629 48.328Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
+                    <path d="M190.504 3.78399V93H178.856V3.78399H190.504Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
+                    <path d="M222.004 13.256V43.08H254.516V52.68H222.004V83.4H258.356V93H210.356V3.65599H258.356V13.256H222.004Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
+                    <path d="M346.125 93H334.477L287.629 21.96V93H275.981V3.65599H287.629L334.477 74.568V3.65599H346.125V93Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
+                    <path d="M420.893 3.78399V13.256H396.573V93H384.925V13.256H360.477V3.78399H420.893Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
+                    <path d="M446.879 3.78399V93H435.231V3.78399H446.879Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
+                    <path d="M495.019 93.896C489.131 93.896 483.84 92.872 479.147 90.824C474.539 88.6907 470.912 85.7893 468.267 82.12C465.622 78.3653 464.256 74.056 464.171 69.192H476.587C477.014 73.3733 478.72 76.9147 481.707 79.816C484.779 82.632 489.216 84.04 495.019 84.04C500.566 84.04 504.918 82.6747 508.075 79.944C511.318 77.128 512.939 73.544 512.939 69.192C512.939 65.7787 512 63.0053 510.123 60.872C508.246 58.7387 505.899 57.1173 503.083 56.008C500.267 54.8987 496.47 53.704 491.691 52.424C485.803 50.888 481.067 49.352 477.483 47.816C473.984 46.28 470.955 43.8907 468.395 40.648C465.92 37.32 464.683 32.8827 464.683 27.336C464.683 22.472 465.92 18.1627 468.395 14.408C470.87 10.6533 474.326 7.75199 478.763 5.70399C483.286 3.65599 488.448 2.63199 494.251 2.63199C502.614 2.63199 509.44 4.72266 514.731 8.90399C520.107 13.0853 523.136 18.632 523.819 25.544H511.019C510.592 22.1307 508.8 19.144 505.643 16.584C502.486 13.9387 498.304 12.616 493.099 12.616C488.235 12.616 484.267 13.896 481.195 16.456C478.123 18.9307 476.587 22.4293 476.587 26.952C476.587 30.1947 477.483 32.84 479.275 34.888C481.152 36.936 483.414 38.5147 486.059 39.624C488.79 40.648 492.587 41.8427 497.451 43.208C503.339 44.8293 508.075 46.4507 511.659 48.072C515.243 49.608 518.315 52.04 520.875 55.368C523.435 58.6107 524.715 63.048 524.715 68.68C524.715 73.032 523.563 77.128 521.259 80.968C518.955 84.808 515.542 87.9227 511.019 90.312C506.496 92.7013 501.163 93.896 495.019 93.896Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
+                    <path d="M596.768 3.78399V13.256H572.448V93H560.8V13.256H536.352V3.78399H596.768Z" stroke="#85FF9F" stroke-width="4" mask="url(#path-1-outside-1_2_2)"/>
                 </svg>
+
 
             </div>
 
@@ -94,8 +92,10 @@ mail($to,$subject,$message,$headers);
 
             <div class="textbox-home">
                 <p class="basic-text">
-                    Design and Technology have always been my passions and as a web developer and designer, I get to combine the best of both worlds everyday.
-                    Over the years, this allowed me to work with many different clients across multiple industries, ranging from crash-test companies to international supplement brands.
+                    Design and Technology have always been my passions and as a web developer and designer, I get to
+                    combine the best of both worlds everyday.
+                    Over the years, this allowed me to work with many different clients across multiple industries,
+                    ranging from crash-test companies to international supplement brands.
                 </p>
             </div>
 
@@ -104,7 +104,8 @@ mail($to,$subject,$message,$headers);
 
                     I love to design and code beautifully simple things and I'm always looking for new Challenges.
                     <br><br>
-                    Whenever I’m not working on projects, you can find me outdoors, climbing mountains and chasing sunsets.
+                    Whenever I’m not working on projects, you can find me outdoors, climbing mountains and chasing
+                    sunsets.
                 </p>
             </div>
         </div>
@@ -113,100 +114,88 @@ mail($to,$subject,$message,$headers);
     </div>
 
 
-
-
 </header>
-
-
-<!-- About
-
- <section id="about" class="about-section text-center" id="about">
-    <div class="">
-        <div class="row">
-            <div class="col-lg-8 mx-auto" style=" margin-top: 0">
-                <div class="svg_container container">
-                    <svg class="whatsup" width="100%" viewBox="0 0 1200 740" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="test" d="M417.504 347.392L404.576 392H398.048L387.68 356.096L376.928 392L370.464 392.064L357.984 347.392H364.192L373.92 385.216L384.672 347.392H391.2L401.44 385.088L411.232 347.392H417.504Z" fill="white"/>
-                        <path d="M477.446 347.392V392H471.622V371.776H448.902V392H443.078V347.392H448.902V366.976H471.622V347.392H477.446Z" fill="white"/>
-                        <path d="M532.958 382.08H513.502L509.918 392H503.774L519.902 347.648H526.622L542.686 392H536.542L532.958 382.08ZM531.294 377.344L523.23 354.816L515.166 377.344H531.294Z" fill="white"/>
-                        <path d="M596.371 347.392V352.128H584.211V392H578.387V352.128H566.163V347.392H596.371Z" fill="white"/>
-                        <path d="M623.636 347.392H630.1L623.956 361.92H619.86L623.636 347.392Z" fill="white"/>
-                        <path d="M670.084 392.448C667.14 392.448 664.495 391.936 662.148 390.912C659.844 389.845 658.031 388.395 656.708 386.56C655.386 384.683 654.703 382.528 654.66 380.096H660.868C661.082 382.187 661.935 383.957 663.428 385.408C664.964 386.816 667.183 387.52 670.084 387.52C672.858 387.52 675.034 386.837 676.612 385.472C678.234 384.064 679.044 382.272 679.044 380.096C679.044 378.389 678.575 377.003 677.636 375.936C676.698 374.869 675.524 374.059 674.116 373.504C672.708 372.949 670.81 372.352 668.42 371.712C665.476 370.944 663.108 370.176 661.316 369.408C659.567 368.64 658.052 367.445 656.772 365.824C655.535 364.16 654.916 361.941 654.916 359.168C654.916 356.736 655.535 354.581 656.772 352.704C658.01 350.827 659.738 349.376 661.956 348.352C664.218 347.328 666.799 346.816 669.7 346.816C673.882 346.816 677.295 347.861 679.94 349.952C682.628 352.043 684.143 354.816 684.484 358.272H678.084C677.871 356.565 676.975 355.072 675.396 353.792C673.818 352.469 671.727 351.808 669.124 351.808C666.692 351.808 664.708 352.448 663.172 353.728C661.636 354.965 660.868 356.715 660.868 358.976C660.868 360.597 661.316 361.92 662.212 362.944C663.151 363.968 664.282 364.757 665.604 365.312C666.97 365.824 668.868 366.421 671.3 367.104C674.244 367.915 676.612 368.725 678.404 369.536C680.196 370.304 681.732 371.52 683.012 373.184C684.292 374.805 684.932 377.024 684.932 379.84C684.932 382.016 684.356 384.064 683.204 385.984C682.052 387.904 680.346 389.461 678.084 390.656C675.823 391.851 673.156 392.448 670.084 392.448Z" fill="white"/>
-                        <path d="M754.661 347.392V375.616C754.661 379.584 755.621 382.528 757.541 384.448C759.504 386.368 762.213 387.328 765.669 387.328C769.083 387.328 771.749 386.368 773.669 384.448C775.632 382.528 776.613 379.584 776.613 375.616V347.392H782.437V375.552C782.437 379.264 781.691 382.4 780.197 384.96C778.704 387.477 776.677 389.355 774.117 390.592C771.6 391.829 768.763 392.448 765.605 392.448C762.448 392.448 759.589 391.829 757.029 390.592C754.512 389.355 752.507 387.477 751.013 384.96C749.563 382.4 748.837 379.264 748.837 375.552V347.392H754.661Z" fill="white"/>
-                        <path d="M841.177 360.448C841.177 364.16 839.897 367.253 837.337 369.728C834.82 372.16 830.958 373.376 825.753 373.376H817.177V392H811.353V347.392H825.753C830.788 347.392 834.606 348.608 837.209 351.04C839.854 353.472 841.177 356.608 841.177 360.448ZM825.753 368.576C828.996 368.576 831.385 367.872 832.921 366.464C834.457 365.056 835.225 363.051 835.225 360.448C835.225 354.944 832.068 352.192 825.753 352.192H817.177V368.576H825.753Z" fill="white"/>
-                    </svg>
-
-                    <div class="about-text-dominik">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </div>
-                    <div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
--->
 
 <!-- Projects-->
 <section class="projects-section bg-main project-heading" id="projects">
     <div class="container box_underline">
-        <h2 class="heading_work">EXPLORE<br>MY WORK</h2>
+        <h2 class="heading_work">WHAT I DO</h2>
     </div>
 </section>
 <section class="projects-section bg-main">
     <div class="">
         <!-- Featured Project Row-->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5 work-box animation-box">
+
+            <div class="col-xl-6 col-lg-6">
+                <div class="featured-text  text-lg-left work_text-box ">
+                    <h3>SET IMPULES THAT MATTER</h3>
+                    <p class=" mb-0"><span class="company-name">Boutique Christa</span> is a high fashion boutique for
+                        woman's clothing, located in Linz, Austria.
+                        <br><br>I was responsible for the <span class="work-keyword">Content-Production</span> and the
+                        Management of their <span class="work-keyword">Digital Apperance</span>, including their <span
+                                class="work-keyword">Website, Social Media Marketing, SEO/SEA </span> and <span
+                                class="work-keyword">Email-/Newsletter Marketing </span>.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6" , id="grid_frame">
+                <div class="animation-wrapper">
+                    <div class="stagger-visualizer">
+                        <div class="dots-wrapper"></div>
+                        <div class="cursor color-red"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5   work-box animation-box">
+            <div class="col-xl-6 col-lg-6">
+                <div class="stagger2-visualizer"></div>
+            </div>
+
+
+            <div class="col-xl-6 col-lg-6">
+                <div class="featured-text  text-lg-left work_text-box">
+                    <h3>FIND PATTERNS IN CHAOS</h3>
+                    <p class=" mb-0"><span class="company-name">Vegan Power</span> is one of the leading (vegan)
+                        supplement brands in Austria.
+                        <br><br>I was fortunate to help them developing their new <span
+                                class="work-keyword">Onlineshop </span>which eventually increased sales while
+                        drastically reducing the maintaince costs.
+                        <br>Furthermore, I helped them with their <span
+                                class="work-keyword">Online Marketing Campaigns </span> (Social Media & E-Mail) and
+                        assisted as an technical <span class="work-keyword">SEO/SEA Consultant</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div class="row align-items-center no-gutters mb-4 mb-lg-5 work-box">
-
             <div class="col-xl-6 col-lg-6">
                 <div class="featured-text  text-lg-left work_text-box">
-                    <h3>Boutique Christa</h3>
-                    <p class=" mb-0"><span class="company-name">Boutique Christa</span> is a high fashion boutique for woman's clothing, located in Linz, Austria.
-                        <br><br>I was responsible for the <span class="work-keyword">Content-Production</span> and the Management of their <span class="work-keyword">Digital Apperance</span>, including their <span class="work-keyword">Website, Social Media Marketing, SEO/SEA </span> and <span class="work-keyword">Email-/Newsletter Marketing </span>.
-
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="col-xl-6 col-lg-6">
-                <img class="img-fluid mb-3 mb-lg-0" src="assets/img/boutique_christa.jpg" alt="" />
-            </div>
-
-        </div>
-
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5   work-box">
-            <div class="col-xl-6 col-lg-6">
-                <img class="img-fluid mb-3 mb-lg-0 image_full-width" src="assets/img/danielzellan_grande.jpg" alt="" /></div>
-
-
-            <div class="col-xl-6 col-lg-6">
-                <div class="featured-text  text-lg-left work_text-box">
-                    <h3>Vegan Power</h3>
-                    <p class=" mb-0"><span class="company-name">Vegan Power</span> is one of the leading (vegan) supplement brands in Austria.
-                        <br><br>I was fortunate to help them developing their new <span class="work-keyword">Onlineshop </span>which eventually increased sales while drastically reducing the maintaince costs.
-                        <br>Furthermore, I helped them with their <span class="work-keyword">Online Marketing Campaigns </span> (Social Media & E-Mail) and assisted as an technical <span class="work-keyword">SEO/SEA Consultant</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5 work-box">
-            <div class="col-xl-6 col-lg-6">
-                <div class="featured-text  text-lg-left work_text-box">
-                    <h3>SELLNER School + Office</h3>
-                    <p class=" mb-0"><span class="company-name">SELLNER School + Office</span> is a international manufacturer for all kinds of pens, belonging the european market leaders in this sector.
-                        <br><br> I got the chance to desgin and develop their entire new <span class="work-keyword">Website</span>. In Addtion, I also took care of the  <span class="work-keyword"> Technial SEO</span> parts as well as some <span class="work-keyword">Content-Creation</span> .
+                    <h3>CONNECT THE DOTS</h3>
+                    <p class=" mb-0"><span class="company-name">SELLNER School + Office</span> is a international
+                        manufacturer for all kinds of pens, belonging the european market leaders in this sector.
+                        <br><br> I got the chance to desgin and develop their entire new <span class="work-keyword">Website</span>.
+                        In Addtion, I also took care of the <span class="work-keyword"> Technial SEO</span> parts as
+                        well as some <span class="work-keyword">Content-Creation</span> .
                     </p>
                 </div>
             </div>
 
-            <div class="col-xl-6 col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/sellner1.jpg" alt="" /></div>
+            <div class="col-xl-6 col-lg-6">
+                <!-- particles.js container -->
+                <div class="particle-network-animation"></div>
+
+
+
+            </div>
 
         </div>
-
 
 
     </div>
@@ -217,7 +206,7 @@ mail($to,$subject,$message,$headers);
 
 <section id="contact">
     <div class="flexbox-contact container">
-        <div class="col-lg-6 col-md-12 col-sm-12 contact-container" >
+        <div class="col-lg-6 col-md-12 col-sm-12 contact-container">
             <div class="contact-text">
                 <h2> Get in touch</h2>
                 <p>
@@ -229,11 +218,14 @@ mail($to,$subject,$message,$headers);
 
                 <ul class="contact-list">
                     <i class=""></i>
-                    <li><i class="fab fa-github favicon_contact"></i><a target="_blank" style="color: white" href="https://github.com/dominikpichler">@dominikpichler</a></li>
-                    <li><i class="fab fa-linkedin-in favicon_contact"></i><a target="_blank" style="color: white" href="https://linkedin.com/in/dominik-pichler-811827135/">Dominik Pichler</a></li>
-                    <li><i class="fas fa-envelope favicon_contact"></i>info[at]dominik-pichler[dot]com </li>
+                    <li><i class="fab fa-github favicon_contact"></i><a target="_blank" style="color: white"
+                                                                        href="https://github.com/dominikpichler">@dominikpichler</a>
+                    </li>
+                    <li><i class="fab fa-linkedin-in favicon_contact"></i><a target="_blank" style="color: white"
+                                                                             href="https://linkedin.com/in/dominik-pichler-811827135/">Dominik
+                            Pichler</a></li>
+                    <li><i class="fas fa-envelope favicon_contact"></i>info[at]dominik-pichler[dot]com</li>
                     <li><i class="fas fa-map-marker-alt favicon_contact"></i>80337 Munich - Germany</li>
-
 
 
                 </ul>
@@ -261,7 +253,8 @@ mail($to,$subject,$message,$headers);
                     </div>
 
                     <div class="contact-form-personal">
-                        <input class="input-name" type="message" id="message" name="message" autocomplete="off" required><br>
+                        <input class="input-name" type="message" id="message" name="message" autocomplete="off"
+                               required><br>
 
                         <!-- <input class="input-name" type="text" id="message" name="message" autocomplete="off" required><br> -->
                         <label class="label_name" for="message">
@@ -284,10 +277,11 @@ mail($to,$subject,$message,$headers);
 </section>
 
 
-
 <!-- Footer-->
-<footer class="footer small text-center text-white-50"><div class="container">Copyright © Dominik Pichler <?php echo date("Y"); ?>
-</div></footer>
+<footer class="footer small text-center text-white-50">
+    <div class="container">Copyright © Dominik Pichler <?php echo date("Y"); ?>
+    </div>
+</footer>
 <!-- Bootstrap core JS-->
 <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -298,11 +292,12 @@ mail($to,$subject,$message,$headers);
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-
-
-
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="js/animations.js">
+</script>
 
 </body>
 </html>
