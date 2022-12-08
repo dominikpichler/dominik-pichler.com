@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
 <header class="masthead">
     <div class="container h-100 masthead_content">
         <div class="heading-section">
-            <h1 class="heading_home">Hi, I'm Dominik.<br>I'm a Data</h1>
+            <h1 class="heading_home">Hi, I'm Dominik<br>I'm a Data</h1>
 
             <div>
                 <svg id="logo" width="595" height="92" viewBox="0 0 595 92" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,19 +94,19 @@ if (isset($_POST['submit'])) {
 
             <div class="textbox-home">
                 <p class="basic-text">
-                    Design and Technology have always been my passions and as a web developer and designer, I get to
-                    combine the best of both worlds everyday.
-                    Over the years, this allowed me to work with many different clients across multiple industries,
-                    ranging from crash-test companies to international supplement brands.
+                    Mathematics and Computer Science have always been my passions and as a data scientist and engineer, I get to
+                    combine the best of both worlds every day.
+                    Over the years, this allowed me to work with many great clients across multiple industries,
+                    ranging from crash-test companies to international automotive corporations.
                 </p>
             </div>
 
             <div class="textbox-home">
                 <p class="basic-text">
 
-                    I love to design and code beautifully simple things and I'm always looking for new Challenges.
+                    I simply love to model and code beautiful things, and am therefore always looking for new challenges.
                     <br><br>
-                    Whenever I’m not working on projects, you can find me outdoors, climbing mountains and chasing
+                    Whenever I’m not working on new projects, you can find me outdoors, climbing mountains and chasing
                     sunsets.
                 </p>
             </div>
@@ -129,22 +129,20 @@ if (isset($_POST['submit'])) {
         <!-- Featured Project Row-->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5 work-box animation-box">
 
-            <div class="col-xl-6 col-lg-6">
+            <div class="col-xl-6 col-lg-6 text-box-body">
                 <div class="featured-text  text-lg-left work_text-box ">
                     <h3>SET IMPULES THAT MATTER</h3>
-                    <p class=" mb-0"><span class="company-name">Boutique Christa</span> is a high fashion boutique for
-                        woman's clothing, located in Linz, Austria.
-                        <br><br>I was responsible for the <span class="work-keyword">Content-Production</span> and the
-                        Management of their <span class="work-keyword">Digital Apperance</span>, including their <span
-                                class="work-keyword">Website, Social Media Marketing, SEO/SEA </span> and <span
-                                class="work-keyword">Email-/Newsletter Marketing </span>.
+                    <p class=" mb-0">Precision beats power, and timing beats speed.
+                        <br><br>As a student of physics at the <span class="work-keyword">Technical University of Graz (TUG)</span> I have learned that in the physical world, precision and the right timing are crucial when one tries to have a big impact in a given context.
+                        As a data scientist, I've learned that the same holds true in the business world. With the help of models from (theoretical) physics, I am able to set impulses in your business that matter.
                     </p>
+
 
                 </div>
             </div>
 
             <div class="col-xl-6 col-lg-6" , id="grid_frame">
-                <div class="animation-wrapper">
+                <div class="animation-wrapper" id="float_dots">
                     <div class="stagger-visualizer">
                         <div class="dots-wrapper"></div>
                         <div class="cursor color-red"></div>
@@ -160,17 +158,13 @@ if (isset($_POST['submit'])) {
             </div>
 
 
-            <div class="col-xl-6 col-lg-6">
+            <div class="col-xl-6 col-lg-6 text-box-body">
                 <div class="featured-text  text-lg-left work_text-box">
                     <h3>FIND PATTERNS IN CHAOS</h3>
-                    <p class=" mb-0"><span class="company-name">Vegan Power</span> is one of the leading (vegan)
-                        supplement brands in Austria.
-                        <br><br>I was fortunate to help them developing their new <span
-                                class="work-keyword">Onlineshop </span>which eventually increased sales while
-                        drastically reducing the maintaince costs.
-                        <br>Furthermore, I helped them with their <span
-                                class="work-keyword">Online Marketing Campaigns </span> (Social Media & E-Mail) and
-                        assisted as an technical <span class="work-keyword">SEO/SEA Consultant</span>
+                    Many Scientists believe that chaos, in which form it may appear, is just order with a lack of understanding. As a data scientist, I am able to find unexpected, relevant patterns in chaos and use them to make your business more efficient.
+                    <br>
+                        <br>
+                        This is a topic that's very close to my heart, and was even the subject of my bachelor thesis at the <span class="work-keyword">Technical University of Munich (TUM)</span>. If you are interested in learning more about this topic, feel free to reach out to me.
                     </p>
                 </div>
             </div>
@@ -178,13 +172,12 @@ if (isset($_POST['submit'])) {
 
         <div class="row align-items-center no-gutters mb-4 mb-lg-5 work-box">
             <div class="col-xl-6 col-lg-6">
-                <div class="featured-text  text-lg-left work_text-box">
+                <div class="featured-text  text-lg-left work_text-box text-box-body">
                     <h3>CONNECT THE DOTS</h3>
-                    <p class=" mb-0"><span class="company-name">SELLNER School + Office</span> is a international
-                        manufacturer for all kinds of pens, belonging the european market leaders in this sector.
-                        <br><br> I got the chance to desgin and develop their entire new <span class="work-keyword">Website</span>.
-                        In Addtion, I also took care of the <span class="work-keyword"> Technial SEO</span> parts as
-                        well as some <span class="work-keyword">Content-Creation</span> .
+                    <p class=" mb-0">Often times, it is not only important how things are, but how they influence and depend on each other.
+
+                        <br><br>
+                        I've been fortunate enough to work in a team of scientists at  <span class="work-keyword">Serviceplan</span> to find these connections in the marketing data of large brands such as BMW and O2 using advanced statistical models. Now I want to use these skills to help you connect the dots in your business.
                     </p>
                 </div>
             </div>
@@ -213,7 +206,7 @@ if (isset($_POST['submit'])) {
                 <h2> Get in touch</h2>
                 <p>
                     Feel free to send me a message anytime.<br>
-                    I'd love to talk about you and your projects
+                    I'd love to talk about you and your projects.
                 </p>
             </div>
             <div class="contact-details">
@@ -227,7 +220,7 @@ if (isset($_POST['submit'])) {
                                                                              href="https://linkedin.com/in/dominik-pichler-811827135/">Dominik
                             Pichler</a></li>
                     <li><i class="fas fa-envelope favicon_contact"></i>info[at]dominik-pichler[dot]com</li>
-                    <li><i class="fas fa-map-marker-alt favicon_contact"></i>80337 Munich - Germany</li>
+                    <li><i class="fas fa-map-marker-alt favicon_contact"></i>1140 Vienna - Austria</li>
 
 
                 </ul>
