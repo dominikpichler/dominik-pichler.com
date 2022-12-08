@@ -17,14 +17,14 @@ html, body {
 }
 
 #logo path:nth-child(1){
-    stroke-dasharray: 345.6607666015625;
-    stroke-dashoffset: 345.6607666015625;
+    stroke-dasharray: 439.0336608886719;
+    stroke-dashoffset: 439.0336608886719;
     animation: line-anim 2s ease forwards;
 }
 
 #logo path:nth-child(2){
-    stroke-dasharray: 300.9988098144531;
-    stroke-dashoffset: 300.9988098144531;
+    stroke-dasharray: 452.045654296875;
+    stroke-dashoffset: 452.045654296875;
     animation: line-anim 2s ease forwards 0.3s;
 
 
@@ -32,53 +32,53 @@ html, body {
 }
 
 #logo path:nth-child(3){
-    stroke-dasharray: 248.84634399414062;
-    stroke-dashoffset: 248.84634399414062;
+    stroke-dasharray: 201.72801208496094;
+    stroke-dashoffset: 201.72801208496094;
     animation: line-anim 2s ease forwards 0.6s;
 
 
 }
 #logo path:nth-child(4){
-    stroke-dasharray: 300.99896240234375;
-    stroke-dashoffset: 300.99896240234375;
+    stroke-dasharray: 412.4159240722656;
+    stroke-dashoffset: 412.4159240722656;
     animation: line-anim 2s ease forwards 0.9s;
 
 
 }
 #logo path:nth-child(5){
-    stroke-dasharray: 174.9119873046875;
-    stroke-dashoffset: 174.9119873046875;
+    stroke-dasharray: 537.3182983398438;
+    stroke-dashoffset: 537.3182983398438;
     animation: line-anim 2s ease forwards 1.2s;
 
 
 }
 #logo path:nth-child(6){
-    stroke-dasharray: 254.22616577148438;
-    stroke-dashoffset: 254.22616577148438;
+    stroke-dasharray: 299.2640686035156;
+    stroke-dashoffset: 299.2640686035156;
     animation: line-anim 2s ease forwards 1.5s;
 
 
 }
 
 #logo path:nth-child(7){
-    stroke-dasharray: 351.95111083984375;
-    stroke-dashoffset: 351.95111083984375;
+    stroke-dasharray: 201.72804260253906;
+    stroke-dashoffset: 201.72804260253906;
     animation: line-anim 2s ease forwards 1.5s;
 
 
 }
 
 #logo path:nth-child(8){
-    stroke-dasharray: 300.99945068359375;
-    stroke-dashoffset: 300.99945068359375;
+    stroke-dasharray: 439.0346374511719;
+    stroke-dashoffset: 439.0346374511719;
     animation: line-anim 2s ease forwards 1.5s;
 
 
 }
 
 #logo path:nth-child(9){
-    stroke-dasharray: 182.05319213867188;
-    stroke-dashoffset: 182.05319213867188;
+    stroke-dasharray: 305.2640686035156;
+    stroke-dashoffset: 305.2640686035156;
     animation: line-anim 2s  forwards 1.5s;
 
 
@@ -472,7 +472,7 @@ section {
 
 @media screen and (max-width: 992px) {
    #logo {
-       width: 80%;
+       width: 60%;
    }
 
     .masthead_content {
@@ -521,6 +521,7 @@ section {
 .work-box {
     margin-bottom: 0 !important;
     flex-direction: row;
+    padding: 50px 0px;
 }
 
 
@@ -727,6 +728,8 @@ section {
 }
 
 
-
+.animation-box {
+    padding-bottom: 200px;
+}
 
 
