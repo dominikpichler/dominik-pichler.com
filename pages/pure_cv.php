@@ -66,6 +66,7 @@
 		</div>
 	</div>
 	<!-- about -->
+        <div class="pagebreak"> </div>
 
 	<!--  Skills -->
 	<div class="ds-skills-section">
@@ -95,50 +96,77 @@
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 skillbox">
 					<h2 class="ds-heading">Core Skills</h2>
 					<ul class="ds-skills-list">
-						<li>JavaScript</li>
-						<li>Node.js</li>
-						<li>Express.js</li>
-						<li>MongoDB</li>
-						<li>Vue.js</li>
-						<li>React</li>
-						<li>Sequelize</li>
-						<li>Github</li>
-						<li>HTML</li>
+						<li>Python</li>
+						<li>SQL</li>
+						<li>NoSQL</li>
+						<li>R</li>
+						<li>HTML/CSS</li>
+						<li>PHP</li>
+						<li>Java</li>
+						<li>C (Basics)</li>
+						<li>JS (Basics)</li>
 					</ul>
 				</div>
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 skillbox">
-					<h2 class="ds-heading">Other Skills</h2>
+					<h2 class="ds-heading">Frameworks</h2>
 					<ul class="ds-skills-list">
-						<li>Storyblok</li>
-						<li>PWAs</li>
-						<li>Responsive Web Design</li>
+						<li>Flask</li>
+						<li>Django</li>
+						<li>Tornado</li>
+						<li>Laravel</li>
+						<li>Vue.js</li>
 						<li>React</li>
-						<li>Vuetify</li>
 					</ul>
 				</div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 skillbox">
+                    <h2 class="ds-heading">Other Skills</h2>
+                    <ul class="ds-skills-list">
+                        <li>Excel</li>
+                        <li>MongoDB</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>Git</li>
+                        <li>CI/CD</li>
+                        <li>(Baysian) Statistics</li>
+                    </ul>
+                </div>
 
 			</div>
 		</div>
 	</div>
 
 
-	<!-- Experience -->
+    <div class="pagebreak"> </div>
+
+
+
+        <!-- Experience -->
 	<div class="ds-experience-section">
 		<div class="container">
 			<h2 class="ds-heading">Work Experience</h2>
 			<div class="row ds-experience-list">
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 single_experience">
 					<section>
-						<span class="ds-year">2019 - Present</span>
-						<h3 class="ds-officename">Matrix Media Inc</h3>
-						<span class="ds-department">Full Stack developer</span>
+						<span class="ds-year">09/2022 - Present</span>
+						<h3 class="ds-officename">PreGenerate GmbH</h3>
+						<span class="ds-department">Data Scientist</span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut,
 							congue enim. Sed fermentum.</p>
 						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus
-								ut.
-							</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Built scripts to perform advanced <b>Pattern Detection</b> on human gene expressions.</li>
+                            <li>Built a data analysis application that performs <b>Automatic Statistical Analysis </b> on
+                                patient (cell ) data and automatically creates Patient peports using Python, R and
+                                AWS.</li>
+
+                            <li>
+                                Built a <b>Data Pipeline </b> to automatically extract and process qPCR Data from the
+                                laboratory using Python/Django.
+                            </li>
+
+                            <p> <b>Technologies used: </b> Python (Vanilla, Django), R, Shiny HTML/(S)CSS, MongoDB, MySQL, PostgreSQL, AWS</p>
+
+
 						</ul>
 					</section>
 				</div>
@@ -205,9 +233,12 @@
 		</div>
 
 
-		<div class="ds-button-sec text-center">
-			<a href="#" class="ds-button">Download Resume</a>
-		</div>
+<!--		<div class="ds-button-sec text-center">-->
+<!--			<a href="#" class="ds-button">Download Resume</a>-->
+<!--            <a href="download_page.php?file=pure_cv.pdf">Download PDF Now</a>-->
+<!--		</div>-->
+
+
 	</div>
 	</div>
 </body>
